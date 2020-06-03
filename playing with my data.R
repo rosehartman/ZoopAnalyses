@@ -144,3 +144,23 @@ szoopsum = group_by(szoop2, season, Tax2, Tax3, salbin, region) %>%
 psal2 = ggplot(szoopsum, aes(x = salbin, y = CPUE, fill = Tax2)) + 
   geom_bar(stat = "identity", position = "fill")
 psal2 + facet_grid(region~season, scales = "free_x")
+
+#########################################################################
+
+#set up community matrix
+
+allzooptax = group_by(allzoop2, SampleID, Tax2) %>%
+  summarize(CPUE = sum(CPUE))
+allzoopCom = pivot_wider(allzooptax, id_cols = SampleID, names_from = Tax2, 
+                         values_from = CPUE) %>%
+  ungroup()
+allzoopCom = select(as_tibble(allzoopCom), -starts_with("Sample"))
+
+envmat = group_by(allzoop2, SampleID, month, Volume, Year, Date, SalSurf, Latitude, 
+                  Longitude, Tide, Station, Chl, 
+                  Secchi, Temperature, BottomDepth, Turbidity, 
+                  Microcystis, pH, DO, season, region) %>%
+  summarize(tot = sum(CPUE))
+
+#let's see what a PERMANOVA will get us
+a1 = adonis(allzoopCom[,2:22])

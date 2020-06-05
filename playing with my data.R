@@ -6,10 +6,14 @@
 library(tidyverse)
 library(vegan)
 library(lubridate)
+library(readr)
+library(MASS)
+library(visreg)
+library(RColorBrewer)
 
 #I suppose I should have used the zooper package to download the data by hand,
 #but I just used the shiny app 'cause it's easier.
-library(readr)
+
 allzoop <- read_csv("data-_V0.3.0_2020-06-03.csv", 
                                    col_types = cols(BottomDepth = col_number(), 
                                                     DO = col_number(), Microcystis = col_character(), 
@@ -24,7 +28,8 @@ p1+  geom_bar(aes(fill = Order), stat = "identity")+
 p1
 
 #averages by month and species
-monthzoop = group_by(allzoop, month, Year, Source, Taxname, Class, Order, Family)
+monthzoop = group_by(allzoop, month, Year, Source, Taxname, Class, Order, Family) %>%
+  summarize(CPUE = mean(CPUE))
 
 #total CPUE by month
 zoopTots = group_by(allzoop, month, Year, Source, SampleID, Station, Volume) %>%
@@ -60,10 +65,8 @@ hist(log(zoopTots$CPUE))
 #well, that's a beautiful bell curve
 
 #Let's try something:
-library(MASS)
 m1 = glm.nb(round(CPUE) ~ Source + month, data = zoopTots)
 summary(m1)
-library(visreg)
 visreg(m1)
 
 m2 = glm(round(CPUE) ~ Source + month, data = zoopTots, family = "poisson")
@@ -154,13 +157,50 @@ allzooptax = group_by(allzoop2, SampleID, Tax2) %>%
 allzoopCom = pivot_wider(allzooptax, id_cols = SampleID, names_from = Tax2, 
                          values_from = CPUE) %>%
   ungroup()
-allzoopCom = select(as_tibble(allzoopCom), -starts_with("Sample"))
+allzoopCom = dplyr::select(as_tibble(allzoopCom), -starts_with("Sample"))
 
 envmat = group_by(allzoop2, SampleID, month, Volume, Year, Date, SalSurf, Latitude, 
                   Longitude, Tide, Station, Chl, 
                   Secchi, Temperature, BottomDepth, Turbidity, 
                   Microcystis, pH, DO, season, region) %>%
-  summarize(tot = sum(CPUE))
+  summarize(tot = sum(CPUE)) %>%
+  droplevels() %>%
+  ungroup()
 
 #let's see what a PERMANOVA will get us
-a1 = adonis(allzoopCom[,2:22])
+#a1 = adonis(allzoopCom~ region + season + Year, data = envmat)
+#"Error: cannot allocate vector of size 1.4 Gb"
+
+allzooptax2 = group_by(allzoop2, SampleID, month, Volume, Year, Date, SalSurf, Latitude, 
+                      Longitude, Tide, Station, Chl, 
+                      Secchi, Temperature, BottomDepth, Turbidity, 
+                      Microcystis, pH, DO, season, region, Tax2) %>%
+  summarize(CPUE = sum(CPUE))
+  
+allzoopmon = group_by(allzooptax2, month, Year, region, season, Tax2) %>%
+  summarize(CPUE = mean(CPUE), sal = mean(SalSurf, na.rm = T)) %>%
+  droplevels()
+
+zoopmonCom = pivot_wider(allzoopmon, 
+                         names_from = Tax2, 
+                         values_from = CPUE) %>%
+  ungroup()
+
+zoopmonCom1 = dplyr::select(zoopmonCom, -month, -Year, -region, -season, -sal)
+zoopmonenv = dplyr::select(zoopmonCom, month, Year, region, season, sal) %>%
+  mutate(region = as.factor(region))
+
+a2 = adonis(zoopmonCom1~region + season, data = zoopmonenv)
+a2
+
+NMDS1 = metaMDS(zoopmonCom1)
+source("plotNMDS.R")
+PlotNMDS(NMDS1, zoopmonenv, group = "region")
+PlotNMDS(NMDS1, zoopmonenv, group = "season")
+
+plot(NMDS1, type="n", shrink = T, cex=1)
+points(NMDS1, display = "sites", col = "blue")
+
+with(zoopmonenv, ordisurf(NMDS1~sal, labcex = 1, lwd.cl = 2,
+                          main = "Community NDMS with isohalines", add = T))
+text(NMDS1, dis="species", cex=.8) 

@@ -25,7 +25,7 @@ allzoop$month = month(allzoop$Date)
 p1 = ggplot(allzoop, aes(x = month, y = CPUE))
 p1+  geom_bar(aes(fill = Order), stat = "identity")+
   facet_grid(Source~Year)
-p1
+
 
 #averages by month and species
 monthzoop = group_by(allzoop, month, Year, Source, Taxname, Class, Order, Family) %>%

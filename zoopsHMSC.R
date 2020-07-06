@@ -8,6 +8,10 @@ library(corrplot)
 allzoopCom = read.csv("allzoopCom.csv")
 envmat2 = read.csv("envmat2.csv")
 
+#try a lognormal distribution
+#get trait matrix
+#get phylogenies
+#get rid of sampleID random effect
 
 #Get rid of NAs in the environmental matrix
 #  summary(envmat)
@@ -47,20 +51,22 @@ envmat2 = read.csv("envmat2.csv")
   #function to the posterior predictive
   #distribution simulated by the function computePredictedValues.
   preds = computePredictedValues(mm2, nParallel = 2)
-  evaluateModelFit(hM = mm2, predY = preds)
+  fit = evaluateModelFit(hM = mm2, predY = preds)
   #
   
   
 # We next evaluate the model’s predictive power through two-fold cross validation.
   partition = createPartition(mm2, nfolds = 2)
-  preds = computePredictedValues(mm2, partition = partition)
+  predscross = computePredictedValues(mm2, partition = partition)
 
-  evaluateModelFit(hM = mm2, predY = preds)
+  evaluateModelFit(hM = mm2, predY = predscross)
   
   #Let us now look at the estimates of the β parameters. We may do so visually by applying the plotBeta
   #function.
   postBeta = getPostEstimate(mm2, parName = "Beta")
-  plotBeta(mm2, post = postBeta, param = "Support", supportLevel = 0.95)
+  plotBeta(mm2, post = postBeta, param = "Support", supportLevel = 0.50)
+  plotBeta(mm2, post = postBeta, param = "Mean", supportLevel = 0.9)
+  
 
   #Estimating species-to-species associations
   envmat2 = mutate(envmat2, SampleID = as.factor(SampleID), Station = as.factor(Station))
@@ -69,8 +75,8 @@ studydesign = data.frame(sample = as.factor(envmat2$SampleID),
   rL = HmscRandomLevel(units = envmat2$SampleID)
   rL2 = HmscRandomLevel(units = envmat2$Station)
   m = Hmsc(Y = as.matrix(allzoopCom), XData = as.data.frame(envmat2),
-           XFormula =  ~region+season+ SalSurf,
-           studyDesign = studydesign, ranLevels = list(sample = rL, plot = rL2))
+           XFormula =  ~SalSurf + Temperature + region + season,
+           studyDesign = studydesign, ranLevels = list("plot" = rL2), distr = "lognormal poisson")
   
   m = sampleMcmc(m, thin = 10, samples = 100, transient = 500,
                  nChains = 2)  
@@ -81,17 +87,17 @@ studydesign = data.frame(sample = as.factor(envmat2$SampleID),
   #is the matrix of species-to-species residual
   #covariances.
   
-  mpost = convertToCodaObject(m)
+  mpost2 = convertToCodaObject(m)
   
   par(mfrow=c(2,2))
   
-  hist(effectiveSize(mpost$Beta), main="ess(beta)")
-  hist(gelman.diag(mpost$Beta, multivariate=FALSE)$psrf, main="psrf(beta)")
-  hist(effectiveSize(mpost$Omega[[1]]), main="ess(omega)")
-  hist(gelman.diag(mpost$Omega[[1]], multivariate=FALSE)$psrf, main="psrf(omega)")
+  hist(effectiveSize(mpost2$Beta), main="ess(beta)")
+  hist(gelman.diag(mpost2$Beta, multivariate=TRUE)$psrf, main="psrf(beta)")
+  hist(effectiveSize(mpost2$Omega[[1]]), main="ess(omega)")
+  hist(gelman.diag(mpost2$Omega[[1]], multivariate=TRUE)$psrf, main="psrf(omega)")
   
-  postBeta = getPostEstimate(m, parName="Beta")
-  plotBeta(m, post=postBeta, param="Support", supportLevel = 0.95)
+  postBeta2 = getPostEstimate(m, parName="Beta")
+  plotBeta(m, post=postBeta2, param="Support", supportLevel = 0.5)
 #mostly pretty similar to without the random effet, but a few diffferences
   
   
@@ -109,7 +115,5 @@ studydesign = data.frame(sample = as.factor(envmat2$SampleID),
   corrplot(toPlot, method = "color",
            col = colorRampPalette(c("blue","white","red"))(200),
            title = paste("random effect level:", m$rLNames[1]), mar=c(0,0,1,0))
-  corrplot(toPlot, method = "color",
-           col = colorRampPalette(c("blue","white","red"))(200),
-           title = paste("random effect level:", m$rLNames[2]), mar=c(0,0,1,0))
+
   

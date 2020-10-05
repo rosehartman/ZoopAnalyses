@@ -1,36 +1,36 @@
-Taxname,Tax2,Tax3
-Acanthocyclops vernalis,Acanthocyclops,Cyclopoida
-Acartia_UnID,Acartia,Calanoida
-Acartiella sinensis,Acartiella,Calanoida
-Acartiella_UnID,Acartiella,Calanoida
-Asplanchna_UnID,Rotifera,Rotifera
-Bosmina longirostris,Bosmina,Cladocera
-Calanoida_UnID,Calanoida,Calanoida
-Cirripedia_UnID,Cirripedia,Cirrepedia
-Cladocera_UnID,Cladocera,Cladocera
-Copepoda_UnID,Copepoda,UNID
-Cyclopoida_UnID,Cyclopoda,Cyclopoida
-Daphnia_UnID,Daphnia,Cladocera
-Decapoda_UnID,Decapoda,Decapoda
-Diaphanosoma_UnID,Diaphanosoma,Cladocera
-Diaptomidae_UnID,Diaptomidae,Calanoida
-Eurytemora affinis,Eurytemora,Calanoida
-Eurytemora_UnID,Eurytemora,Calanoida
-Harpacticoida_UnID,Harpactacoida,Harpactacoida
-Keratella_UnID,Rotifera,Rotifera
-Limnoithona sinensis,Limnoithona,Cyclopoida
-Limnoithona tetraspina,Limnoithona,Cyclopoida
-Limnoithona_UnID,Limnoithona,Cyclopoida
-Oithona davisae,Oithona,Cyclopoida
-Oithona similis,Oithona,Cyclopoida
-Oithona_UnID,Oithona,Cyclopoida
-Polyarthra_UnID,Rotifera,Rotifera
-Pseudodiaptomus forbesi,Pseudodiaptomus,Calanoida
-Pseudodiaptomus marinus,Pseudodiaptomus,Calanoida
-Pseudodiaptomus_UnID,Pseudodiaptomus,Calanoida
-Rotifera_UnID,Rotifera,Rotifera
-Sinocalanus doerrii,Sinocalanus,Calanoida
-Sinocalanus_UnID,Sinocalanus,Calanoida
-Synchaeta_UnID,Rotifera,Rotifera
-Tortanus_UnID,Tortanus,Calanoida
-Trichocerca_UnID,Rotifera,Rotifera
+Taxname,Tax2,Tax3,Biomass
+Acanthocyclops vernalis,Acanthocyclops,Cyclopoida,
+Acartia_UnID,Acartia,Calanoida,
+Acartiella sinensis,Acartiella,Calanoida,
+Acartiella_UnID,Acartiella,Calanoida,
+Asplanchna_UnID,Rotifera,Rotifera,
+Bosmina longirostris,Bosmina,Cladocera,
+Calanoida_UnID,Calanoida,Calanoida,
+Cirripedia_UnID,Cirripedia,Cirrepedia,
+Cladocera_UnID,Cladocera,Cladocera,
+Copepoda_UnID,Copepoda,UNID,
+Cyclopoida_UnID,Cyclopoda,Cyclopoida,
+Daphnia_UnID,Daphnia,Cladocera,
+Decapoda_UnID,Decapoda,Decapoda,
+Diaphanosoma_UnID,Diaphanosoma,Cladocera,
+Diaptomidae_UnID,Diaptomidae,Calanoida,
+Eurytemora affinis,Eurytemora,Calanoida,
+Eurytemora_UnID,Eurytemora,Calanoida,
+Harpacticoida_UnID,Harpactacoida,Harpactacoida,
+Keratella_UnID,Rotifera,Rotifera,
+Limnoithona sinensis,Limnoithona,Cyclopoida,
+Limnoithona tetraspina,Limnoithona,Cyclopoida,
+Limnoithona_UnID,Limnoithona,Cyclopoida,
+Oithona davisae,Oithona,Cyclopoida,
+Oithona similis,Oithona,Cyclopoida,
+Oithona_UnID,Oithona,Cyclopoida,
+Polyarthra_UnID,Rotifera,Rotifera,
+Pseudodiaptomus forbesi,Pseudodiaptomus,Calanoida,
+Pseudodiaptomus marinus,Pseudodiaptomus,Calanoida,
+Pseudodiaptomus_UnID,Pseudodiaptomus,Calanoida,
+Rotifera_UnID,Rotifera,Rotifera,
+Sinocalanus doerrii,Sinocalanus,Calanoida,
+Sinocalanus_UnID,Sinocalanus,Calanoida,
+Synchaeta_UnID,Rotifera,Rotifera,
+Tortanus_UnID,Tortanus,Calanoida,
+Trichocerca_UnID,Rotifera,Rotifera,

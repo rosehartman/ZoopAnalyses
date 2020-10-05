@@ -193,6 +193,9 @@ zoopmonenv = dplyr::select(zoopmonCom, month, Year, region, season, sal) %>%
 a2 = adonis(zoopmonCom1~region + season, data = zoopmonenv)
 a2
 
+a3 = adonis(zoopmonCom1~region*season, data = zoopmonenv)
+a3
+
 NMDS1 = metaMDS(zoopmonCom1)
 source("plotNMDS.R")
 PlotNMDS(NMDS1, zoopmonenv, group = "region")
@@ -204,3 +207,148 @@ points(NMDS1, display = "sites", col = "blue")
 with(zoopmonenv, ordisurf(NMDS1~sal, labcex = 1, lwd.cl = 2,
                           main = "Community NDMS with isohalines", add = T))
 text(NMDS1, dis="species", cex=.8) 
+
+sp1 = with(zoopmonenv, simper(zoopmonCom1, season))
+summary(sp1)
+sp1
+
+sp2 = with(zoopmonenv, simper(zoopmonCom1, region))
+summary(sp2)
+sp2
+
+
+#############################################################################################
+#What about change in community structure over time?
+#I should probably just use EMP data, since there isn't much from other programs. 
+
+#import the data and reformat it
+EMP = read_csv("EMP1979_2019.csv", guess_max = 10000, col_types = cols(BottomDepth = col_number(), 
+                                 DO = col_number(), Microcystis = col_character(), 
+                                 Turbidity = col_number(), pH = col_number(),
+                                 Datetime = col_datetime())) %>%
+  mutate(month = month(Datetime))
+
+
+EMP2 = merge(EMP, seasons) %>%
+  filter(month >2) %>%
+  mutate(region = NA)
+
+#add my regions
+
+EMP2$region[which(EMP2$Latitude < 38.084  & EMP2$Longitude < -122.194)] = "SBP"
+EMP2$region[which(EMP2$Latitude >= 38.084  & EMP2$Longitude < -122.194)] = "Napa"
+EMP2$region[which(EMP2$Longitude >= -122.194 & EMP2$Longitude <= -121.875)] = "Suisun"
+EMP2$region[which(EMP2$Longitude < -121.699 & EMP2$Longitude > -121.875 &
+                        EMP2$Latitude < 38.127 & EMP2$Latitude > 37.996)] = "Confluence"
+EMP2$region[which(EMP2$Longitude >= -121.699 &
+                        EMP2$Latitude < 38.127 )] = "SCDelta"
+EMP2$region[which(EMP2$Longitude > -121.807 &
+                        EMP2$Latitude > 38.127 )] = "Cache"
+
+#I'm just going to get rid of all the data with "NA" for the lats and longs
+EMP2 = filter(EMP2, !is.na(Latitude)) %>%
+  left_join(taxa, by = "Taxname")
+
+
+EMPtax = group_by(EMP2, SampleID, Tax2) %>%
+  summarize(CPUE = sum(CPUE))
+EMPCom = pivot_wider(EMPtax, id_cols = SampleID, names_from = Tax2, 
+                         values_from = CPUE) %>%
+  ungroup()
+EMPCom = dplyr::select(as_tibble(EMPCom), -starts_with("Sample"))
+
+envmatEMP = group_by(EMP2, SampleID, month, Volume, Year, Date, SalSurf, Latitude, 
+                  Longitude, Tide, Station, Chl, 
+                  Secchi, Temperature, BottomDepth, Turbidity, 
+                  Microcystis, pH, DO, season, region) %>%
+  summarize(tot = sum(CPUE)) %>%
+  droplevels() %>%
+  ungroup()
+
+#OK, now let's do an NMDS with regions, seasons, and years
+a2 = adonis(EMPCom~region + season + Year, data = envmat)
+a2
+
+
+
+EMPtax2 = group_by(EMP2, SampleID, month, Volume, Year, Date, SalSurf, Latitude, 
+                       Longitude, Tide, Station, Chl, 
+                       Secchi, Temperature, BottomDepth, Turbidity, 
+                       Microcystis, pH, DO, season, region, Tax2) %>%
+  summarize(CPUE = sum(CPUE))
+
+EMPmon = group_by(EMPtax2, month, Year, region, season, Tax2) %>%
+  summarize(CPUE = mean(CPUE), sal = mean(SalSurf, na.rm = T)) %>%
+  droplevels()
+
+zoopmonComE = pivot_wider(EMPmon, 
+                         names_from = Tax2, 
+                         values_from = CPUE) %>%
+  ungroup()
+
+zoopmonCom1E = dplyr::select(zoopmonComE, -month, -Year, -region, -season, -sal)
+zoopmonenvE = dplyr::select(zoopmonComE, month, Year, region, season, sal) %>%
+  mutate(region = as.factor(region))
+
+#OK, now let's do an NMDS with regions, seasons, and years
+a2 = adonis(zoopmonCom1E~region + season + Year, data = zoopmonenvE)
+a2
+
+
+NMDS2 = metaMDS(zoopmonCom1E, trymax = 100)
+
+PlotNMDS(NMDS2, zoopmonenvE, group = "region")
+PlotNMDS(NMDS2, zoopmonenvE, group = "season")
+
+#plot changes by year
+plot(NMDS2, type="n", shrink = T, cex=1)
+points(NMDS2, display = "sites", col = "blue")
+
+with(zoopmonenvE, ordisurf(NMDS2~Year, labcex = 1, lwd.cl = 2,
+                          main = "Community NDMS by Year", add = T))
+text(NMDS2, dis="species", cex=.8) 
+
+
+#plot changes by salinity
+plot(NMDS2, type="n", shrink = T, cex=1)
+points(NMDS2, display = "sites", col = "blue")
+
+with(zoopmonenvE, ordisurf(NMDS2~sal, labcex = 1, lwd.cl = 2,
+                           main = "Community NDMS by isohaline", add = T))
+text(NMDS2, dis="species", cex=.8) 
+
+
+sp1E = with(zoopmonenvE, simper(zoopmonCom1E, season))
+summary(sp1E)
+sp1E
+
+sp2E = with(zoopmonenvE, simper(zoopmonCom1E, region))
+summary(sp2E)
+sp2
+
+#this is interesting, but it's just looking at one data set, whereas the power in Zooper is the multi-dataset integration.
+
+
+#########################################################################
+#Other things to look at:
+#biomass
+#depth
+#traits influence on distribution
+#Power analysis
+
+#maybe I'll start with biomass
+biocon = read.csv("taxlifestage.csv")
+
+allzoopb = merge(allzoop, biocon) %>%
+  mutate(bpue = CPUE*Biomass)
+
+
+#averages by month and species
+monthzoopb = group_by(allzoopb, month, Year, Source, Taxname, Class, Order, Family) %>%
+  summarize(bpue = mean(bpue))
+
+#total CPUE by month
+zoopTotsb = group_by(allzoopb, month, Year, Source, SampleID, Station, Volume) %>%
+  summarize(bpue = sum(bpue))
+monthtotaveb = group_by(zoopTotsb, month, Year, Source) %>%
+  summarize(bpue = mean(bpue))

@@ -23,7 +23,7 @@ envmat2 = read.csv("envmat2.csv")
   
   #set up the model
   m2 = Hmsc(Y = as.matrix(allzoopCom), XData = as.data.frame(envmat2), 
-           XFormula = ~region+season + SalSurf + Temperature)
+           XFormula = ~SalSurf + Temperature)
   
   #Now do MCMC sampling on it to estimate model parameters
   
@@ -35,7 +35,8 @@ envmat2 = read.csv("envmat2.csv")
   diags = data.frame(effectiveSize(mpost$Beta), 
                      gelman.diag(mpost$Beta, multivariate=TRUE)$psrf)
   
-  
+  save(mm2, mpost, diag, file = "test.RData")
+  load("test.RData")
   #We are looking for high effective sample size and
   #scale=reduction factors (gelman.diag) close to 1
   
@@ -53,8 +54,7 @@ envmat2 = read.csv("envmat2.csv")
   preds = computePredictedValues(mm2, nParallel = 2)
   fit = evaluateModelFit(hM = mm2, predY = preds)
   #
-  
-  
+
 # We next evaluate the model’s predictive power through two-fold cross validation.
   partition = createPartition(mm2, nfolds = 2)
   predscross = computePredictedValues(mm2, partition = partition)

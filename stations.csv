@@ -1,42 +1,42 @@
-Site,FRPStation,EMPzoop,EMPreg,Twentymil,FMWT
-Grizzly Bay,602FRP,NZ028,Grizzly,602,602
-Little Honker Bay,609 FRP,NZ032,Suisun,609,
-Sherman Lake,703 FRP,NZ060,broadslough,703,704
-Horseshoe Bend,705 FRP,NZ064,Horseshoe,705,706
-Horseshoe Bend,706 FRP,NZ064,Horseshoe,706,706
-Prospect,724 FRP,,,724,
-Prospect,726 FRP,NA,,726,
-Broad Slough,801 FRP,NZ060,broadslough,801,802
-Browns,Browns Channel,NZ054,browns,801,513
-Browns,Browns1,NZ054,browns,801,513
-Horseshoe Bend,Decker Breach,NZ064,Horseshoe,705,706
-Dow Wetlands,Dow 2,NZ074,SJDow,801,802
-Dow Wetlands,Dow 3,NZ074,SJDow,801,802
-Dow Wetlands,Dow 4,NZ074,SJDow,801,802
-Dow Wetlands,Dow 5,NZ074,SJDow,801,802
-Dow Wetlands,Dow Breach,NZ074,SJDow,801,802
-Lindsey,LinBr,,,720,
-Lindsey,Lindsey tules,,,720,
-Prospect,ProBr,,,724,723
-Ryer Island,Ryer 2,NZ028,Grizzly,501,501
-Ryer Island,Ryer 3,NZ028,Grizzly,501,501
-Ryer Island,Ryer1,NZ028,Grizzly,501,501
-Prospect,SoPro,,,724,723
-Prospect,SoPro4,,,724,723
-Prospect,SoPro5,,,724,723
-Prospect,SoPro6,,,724,723
-Prospect,SoPro7,,,724,723
-Tule Red,TR1,NZ028,Grizzly,602,602
-Tule Red,TR2,NZ028,Grizzly,602,602
-Tule Red,TR3,NZ028,Grizzly,602,602
-Tule Red,TR5,NZ028,Grizzly,602,602
-Tule Red,TR7,NZ028,Grizzly,602,602
-Webb Tract,Webb,NZ086,Webb,815,815
-winter,WinBr,NZ060,broadslough,801,802
-winter,Winter 1,NZ060,broadslough,801,802
-winter,Winter 2,NZ060,broadslough,801,802
-winter,Winter 3,NZ060,broadslough,801,802
-Lindsey,720 FRP,,,720,
-Wings,Wings 1,NZS42,Suisun,,
-Ryer Island,501 FRP,,,501,
-Prospect,ProBR,,,724,
+Site,FRPStation,EMPzoop,Twentymil,FMWT,Shallowdeep,Ggdist
+Ryer Island,Ryer 2,NZ028,501,501,N,60
+Ryer Island,Ryer 3,NZ028,501,501,N,60
+Ryer Island,Ryer1,NZ028,501,501,N,60
+Ryer Island,501 FRP,,501,,Y,60
+Grizzly Bay,602FRP,NZ028,602,602,Y,65
+Tule Red,TR1,NZ028,602,602,N,65
+Tule Red,TR2,NZ028,602,602,N,65
+Tule Red,TR3,NZ028,602,602,N,65
+Tule Red,TR5,NZ028,602,602,N,65
+Tule Red,TR7,NZ028,602,602,N,65
+Little Honker Bay,609 FRP,NZ032,609,,Y,75
+Sherman Lake,703 FRP,NZ060,703,704,Y,85
+Horseshoe Bend,705 FRP,NZ064,705,706,Y,95
+Horseshoe Bend,Decker Breach,NZ064,705,706,Y,95
+Horseshoe Bend,706 FRP,NZ064,706,706,Y,95
+Lindsey,LinBr,,720,,Y,130
+Lindsey,Lindsey tules,,720,,Y,130
+Lindsey,720 FRP,,720,,Y,130
+Prospect,724 FRP,,724,,Y,115
+Prospect,ProBr,,724,723,Y,115
+Prospect,SoPro,,724,723,N,115
+Prospect,SoPro4,,724,723,N,115
+Prospect,SoPro5,,724,723,N,115
+Prospect,SoPro6,,724,723,N,115
+Prospect,SoPro7,,724,723,N,115
+Prospect,ProBR,,724,,N,115
+Prospect,726 FRP,,726,,Y,120
+Broad Slough,801 FRP,NZ060,801,802,Y,80
+Browns,Browns Channel,NZ054,801,513,Y,80
+Browns,Browns1,NZ054,801,513,N,80
+Dow Wetlands,Dow 2,NZ074,801,802,N,80
+Dow Wetlands,Dow 3,NZ074,801,802,N,80
+Dow Wetlands,Dow 4,NZ074,801,802,N,80
+Dow Wetlands,Dow 5,NZ074,801,802,N,80
+Dow Wetlands,Dow Breach,NZ074,801,802,N,80
+winter,WinBr,NZ060,801,802,Y,80
+winter,Winter 1,NZ060,801,802,N,80
+winter,Winter 2,NZ060,801,802,N,80
+winter,Winter 3,NZ060,801,802,N,80
+Webb Tract,Webb,NZ086,815,815,Y,105
+Wings,Wings 1,NZS42,,,Y,60

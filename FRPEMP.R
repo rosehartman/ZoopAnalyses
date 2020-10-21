@@ -24,7 +24,11 @@ EMP20 = read.csv("EMP20.csv")
 stas = read.csv("stations.csv")
 
 stations = rename(stas, FRP = FRPStation, `20mm` = Twentymil, EMP = "EMPzoop") %>%
-  mutate(`20mm` = as.character(`20mm`), FMWT = NULL, EMPreg = NULL) %>%
+  mutate(`20mm` = as.character(`20mm`), FMWT = NULL, EMPreg = NULL,
+         Site = factor(Site, levels = c("Wings","Little Honker Bay",
+                                        "Grizzly Bay", "Browns", "Winter",
+                                        "Sherman Lake", "Stacys", "Horseshoe Bend",
+                                        "Prospect", "Lindsey"))) %>%
   pivot_longer(cols = c(FRP, `20mm`, EMP), names_to = "survey", values_to = "Station") %>%
   distinct() %>%
   filter(Shallowdeep =="Y", !is.na(Station), Station != "")
@@ -45,11 +49,11 @@ EMP20.1 = mutate(EMP20.1, Taxname = str_remove_all(Taxname, "_UnID"),
 
 #add analysis classes
 EMP20.2 = mutate(crosswalk, Taxlifestage = paste(Taxname, Lifestage)) %>%
-  select(Taxlifestage, Phylum, Class, Order, Analy, Analy2) %>%
+  dplyr::select(Taxlifestage, Phylum, Class, Order, Analy, Analy2) %>%
   distinct()%>%
   right_join(EMP20.1)
 
-EMP20.3 = select(EMP20.2, Site, survey, Station, Ggdist, SampleID, 
+EMP20.3 = dplyr::select(EMP20.2, Site, survey, Station, Ggdist, SampleID, 
                  Date, CPUE, Lifestage, Taxname, Analy, Analy2)
 
 ################################################################################################################################
@@ -87,7 +91,7 @@ zoo$CPUE = zoo$atotal/zoo$Volume
 #import analysis categories to make it easier to deal with
 frptaxa <- read_excel("FRP_EMPcrosswalk.xlsx", 
                       sheet = "zooper")
-frptaxa = select(frptaxa,  FRP_Meso, Lifestage, Taxname, Analy, Analy2) %>%
+frptaxa = dplyr::select(frptaxa,  FRP_Meso, Lifestage, Taxname, Analy, Analy2) %>%
   rename(CommonName = FRP_Meso) %>%
   filter(CommonName != "NA")
 
@@ -95,19 +99,19 @@ frptaxa = select(frptaxa,  FRP_Meso, Lifestage, Taxname, Analy, Analy2) %>%
 zoop = merge(zoo, frptaxa)
 zoop2 = left_join(stations, zoop) %>%
   filter(survey == "FRP") %>%
-  select(Site, survey, Station, Ggdist, SampleID, Date, CPUE, 
+  dplyr::select(Site, survey, Station, Ggdist, SampleID, Date, CPUE, 
          Lifestage, Taxname, Analy, Analy2)
 
 #the 2018 and 2019 data
 library(readr)
 zoop_FRP2 <- read_csv("zoop_line2270.csv", 
                       col_types = cols(Date = col_date(format = "%Y-%m-%d"))) %>%
-  select(CommonName, SampleID, Station, Date, CPUE, LifeStage)
+  dplyr::select(CommonName, SampleID, Station, Date, CPUE, LifeStage)
 
 zoop_FRP2.1 = merge(zoop_FRP2, frptaxa)
 zoop3 = left_join(stations, zoop_FRP2.1 ) %>%
   filter(survey == "FRP") %>%
-  select(Site, survey, Station, Ggdist, SampleID, Date, CPUE, 
+  dplyr::select(Site, survey, Station, Ggdist, SampleID, Date, CPUE, 
          Lifestage, Taxname, Analy, Analy2)
 
 #Make sure we don't have duplicates with the other FRP data set
@@ -126,8 +130,22 @@ sumz = zoop_FRP2 %>%
 
 ################ALL THE ZOOPS!!!###################
 allzoops = rbind(zoop2, EMP20.3, zoop3.1) %>%
-  mutate(Month = month(Date), Year = year(Date)) %>%
-  filter(Month %in% c(3,4,5,6), Year %in% c(2017, 2018, 2019))
+  mutate(Month = month(Date), Year = year(Date), analyLS = paste(Analy, Lifestage)) %>%
+  filter(Month %in% c(3,4,5,6), Year %in% c(2017, 2018, 2019)) 
+
+allzoops = mutate(allzoops, analyLS = factor(analyLS, levels = c(
+  "Cladocera Adult", "Cyclopoida Adult","Cyclopoida Juvenile", 
+  "Calanoida Adult", "Calanoida Juvenile" , "Calanoida Larva",
+  "Copepoda Adult","Copepoda Larva","Harpacticoida Undifferentiated" ,               
+   "Rotifera Adult", "Cumacea Adult","Barnacle Nauplii Larva",        
+  "Decapoda Larva" ), 
+  labels = c( "Cladocera", "Cyclopoids","Cyclo Juv", 
+    "Calanoids", "Cala Juv" , "Cala Naup",
+    "Other copepods","Copepod Naup","Harpacticoids" ,               
+    "Rotifers", "Cumaceans","Barnacle Naup",        
+    "Crab zoea" )))
+
+
 
 ############################################################################################################
 #now some exploritory plots
@@ -136,20 +154,21 @@ allzoops = rbind(zoop2, EMP20.3, zoop3.1) %>%
 
 #First calculate the average CPUE of each critter (analysis group/life stage) by location and month and year
 allzoops = mutate(allzoops, Year = year(Date), 
-                  Month = month(Date), analyLS = paste(Analy, Lifestage))
+                  Month = month(Date), 
+                  Month2 = factor(Month, levels = c(3,4,5,6), labels= c("Mar", "Apr","May","Jun")))
 
 
 
-zoop20x= group_by(allzoops, SampleID, analyLS, Analy, Lifestage, Site, Month, survey, Year, Ggdist) %>% 
+zoop20x= group_by(allzoops, SampleID, analyLS, Analy, Lifestage, Site, Month, Month2, survey, Year, Ggdist) %>% 
   summarize(CPUE = sum(CPUE, na.rm = T))
-zooLitave = group_by(zoop20x, analyLS, Analy, Lifestage, Site, Month, survey, Year) %>% 
+zooLitave = group_by(zoop20x, analyLS, Analy, Lifestage, Site, Month, Month2,survey, Year) %>% 
   summarize(CPUE = mean(CPUE, na.rm = T), ggdist = mean(Ggdist))
 zooLitave =droplevels(zooLitave) %>%
   filter(analyLS != "NA NA")
 
 #set up labels
 zoolabs = c("Barnacle Nauplii", "Calanoida","Cal juv", "Cal nauplii", 
-            "Cladocera","Copepoda", "Copepoda nauplii", "cumaceans",
+            "Cladocera","Copepoda", "Copepoda nauplii", "Cumacea",
             "Cyclopoda", "Cyclopoid juv", "crab zoea", "Harpacticoida",
             "Rotifera")
 
@@ -158,10 +177,10 @@ mypal = c(brewer.pal(12, "Set3"), brewer.pal(8, "Dark2"))
 #Now a bar plot
 z1 = ggplot(zooLitave, aes(x=survey, y= CPUE))
 z1 + geom_bar(stat = "identity", aes(fill = analyLS), position = "fill") + 
-  scale_fill_manual(values = c(mypal, "white", "green"), name = NULL) + 
-  facet_grid(Site~Year+Month, scales = "free_y") +
+  scale_fill_manual(values = c(mypal, "white", "green"),  name = NULL) + 
+  facet_grid(Site~Month2, scales = "free_y") +
   #  coord_cartesian(ylim = c(0, 16000)) +
-  xlab("Sampling Month") + ylab("CPUE (count per cubic meter)")+
+  xlab("Survey") + ylab("CPUE (count per cubic meter)")+
   theme(legend.position = "right")
 
 z1 + geom_bar(stat = "identity", aes(fill = analyLS)) + 
@@ -223,13 +242,13 @@ adonis(Commat2~Month + survey + Site, data = Envmat)
 
 
 #Do it again with relative abundance
-a1 = adonis(Commatp~Month + survey+ Site, data = Envmat)
+a1 = adonis(Commatp~ survey+ Site+Month, data = Envmat)
 a1
 #site and month make a much bigger difference  than survey for community compositino
 
 #now some non=metric multidimentional scaling
-n1 = metaMDS(Commat2, trymax = 300)
-n2 = metaMDS(Commatp, trymax = 1000)
+#n1 = metaMDS(Commat2, trymax = 300)
+#n2 = metaMDS(Commatp, trymax = 1000)
 #Nope, not working.
 Envmat$survey = as.factor(Envmat$survey)
 Envmat$Site = as.factor(Envmat$Site)
@@ -248,45 +267,24 @@ source("plotNMDS.R")
 
 #do a quick plot with hulls by location
 PlotNMDS(ng1, data = EnvmatGriz, group = "survey")
-#there are definitely differences, but they are a bit of a mess
+#there really aren't significatn differences
 PlotNMDS(ng1, data = EnvmatGriz, group = "Month")
 PlotNMDS(ng1, data = EnvmatGriz, group = "Year")
-
+#those are much more interesting 
 
 #################################################################
 #Take a closer look at the copepods
 
 #put them togetehr with finer=scale taxonomic resoltion
-zoop20.3 = rename(zoop20.1, CommonName = FRP, Date = SampleDate) %>%
-  mutate(survey = "20mm") %>%
-  select(Date, CommonName, Site, survey, CPUE, Station, Month, Year, SampleID, Analy, lifestage)
 
-zooLit2.2 = mutate(zooLit2.1, survey = "FRP", Year = year(Date)) %>%
-  select(CommonName, CPUE, Date, Site, survey, Station, Month, Year, SampleID, Analy, lifestage)
+cops = filter(allzoops, Analy %in% c("Cyclopoida", "Calanoida", "Copepoda"), Site != "Ryer Island")
 
-finezoops = rbind(zoop20.3, zooLit2.2)
-finezoops2 = left_join(stations20mm, finezoops)
-
-cops = filter(finezoops2, Analy %in% c("cyclopoid", "calanoid", "copepod"))%>%
-  filter(!is.na(Month), !is.na(Year), Site != "Webb Tract", Site != "Tule Red", Site != "Wings",
-         Site != "winter", Site != "Dow Wetlands", Site != "Browns", Site != "Ryer Island", Month != 7)
-
-
-
-#Let's do it on the genus level
-cops$CommonName[which(cops$CommonName == "Limnoithona tetraspina")] = "Limnoithona spp."
-cops$CommonName[which(cops$CommonName == "Tortanus dextrilobatus")] = "Tortanus"
-cops$CommonName[which(cops$CommonName == "Tortanus discaudatus")] = "Tortanus"
-cops$CommonName[which(cops$CommonName == "Pseudodiaptomus forbesii")] = "Pseudodiaptomus spp."
-cops$CommonName[which(cops$CommonName == "Pseudodiaptomus marinus")] = "Pseudodiaptomus spp."
-cops$CommonName[which(cops$CommonName == "Oithona davisae")] = "Oithona"
-cops$CommonName[which(cops$CommonName == "Oithona similis")] = "Oithona"
 
 
 #Now a bar plot
 c1 = ggplot(cops, aes(x=survey, y= CPUE))
-c1 + geom_bar(stat = "identity", aes(fill = CommonName), position = "fill") + 
-  # scale_fill_manual(values = c(mypal, "white", "green"), name = NULL) + 
+c1 + geom_bar(stat = "identity", aes(fill = Analy2), position = "fill") + 
+  scale_fill_manual(values = c(mypal, "white", "green"), name = NULL) + 
   facet_grid(Site~Year+Month, scales = "free_y") +
   #  coord_cartesian(ylim = c(0, 16000)) +
   xlab("Sampling Month") + ylab("CPUE (count per cubic meter)")+
@@ -295,17 +293,18 @@ c1 + geom_bar(stat = "identity", aes(fill = CommonName), position = "fill") +
 
 #by life stage
 
-c1 + geom_bar(stat = "identity", aes(fill = lifestage), position = "fill") + 
+c1 + geom_bar(stat = "identity", aes(fill = Lifestage), position = "fill") + 
   # scale_fill_manual(values = c(mypal, "white", "green"), name = NULL) + 
   facet_grid(Site~Year+Month, scales = "free_y") +
   #  coord_cartesian(ylim = c(0, 16000)) +
   xlab("Sampling Month") + ylab("CPUE (count per cubic meter)")+
   theme(legend.position = "right")
+#it kinda looks like FRP gets more juveniles
 
 #Try just looking at adults
-copad = filter(cops, lifestage == "adult")
+copad = filter(cops, Lifestage == "Adult")
 c2 = ggplot(copad, aes(x=survey, y= CPUE))
-c2 + geom_bar(stat = "identity", aes(fill = CommonName), position = "fill") + 
+c2 + geom_bar(stat = "identity", aes(fill = Analy2), position = "fill") + 
   scale_fill_manual(values = c(mypal, "white", "green", "black"), name = NULL) + 
   facet_grid(Site~Year+Month, scales = "free_y") +
   #  coord_cartesian(ylim = c(0, 16000)) +
@@ -316,11 +315,11 @@ c2 + geom_bar(stat = "identity", aes(fill = CommonName), position = "fill") +
 #multivariate stats on adult copepods
 
 #Create a community matrix
-copmat = pivot_wider(copad, names_from = CommonName, values_from = CPUE, 
+copmat = pivot_wider(copad, names_from = Analy2, values_from = CPUE, 
                      id_cols = c(SampleID, Site, Station, Date, Month, survey, Year, Ggdist),
                      values_fill = 0, values_fn = sum)
 Envmat = copmat[,1:8]
-test = copmat[,9:24]
+test = copmat[,9:21]
 test2 = test[,order(names(test))]
 
 copmat2 = as.matrix(test2)
@@ -332,17 +331,16 @@ copmatp = copmat2/rowSums(copmat2)
 #PerMANOVA of abundance matrix survey and month
 adonis(copmat2~Month + survey + Site, data = Envmat)
 
-
 #Do it again with relative abundance
-a1 = adonis(copmatp~Month + survey+ Ggdist, data = Envmat)
+a1 = adonis(copmatp~Month + survey+ Ggdist + Year, data = Envmat)
 a1
-#site is a much bigger difference, survey much smaller
+#Month is definitely the biggest thing
 
 #now some non=metric multidimentional scaling
 n1 = metaMDS(copmat2, trymax = 300)
-#yay!
+#Nope
 n2 = metaMDS(copmatp, trymax = 2000)
-#yay!
+#Nope
 
 Envmat$survey = as.factor(Envmat$survey)
 Envmat$Site = as.factor(Envmat$Site)
@@ -437,9 +435,73 @@ ptot = ggplot(Copave6, aes(x= survey, y = CPUEm, fill = Taxname))
 ptot + geom_bar(stat = "identity", position = "fill") + 
   scale_fill_manual(values = c(mypal, "white", "green", "black"), name = NULL) 
 
-#I need to check and see if diaptomidae is actually in 20mm
 
-#need to get the EMP data.
-#Maybe I grab 20mm at EMP from Sam and integrate?
+#Joint species distribution models with HMSC
 
+library(Hmsc)
+library(tidyverse)
+library(MASS)
+library(corrplot)
+
+allzoopCom = Commatp
+envmat2 = Envmat
+
+#try a lognormal distribution
+#get trait matrix
+#get phylogenies
+#get rid of sampleID random effect
+
+#Get rid of NAs in the environmental matrix
+#  summary(envmat)
+#  envmat2 = dplyr::select(envmat, SampleID, month, Volume, 
+#                          Year, Date, SalSurf, Latitude, Longitude, 
+#                          Tide, Station, Secchi, Temperature, season, region)
+#  allzoopCom = allzoopCom[complete.cases(envmat2),]
+#  envmat2 = envmat2[complete.cases(envmat2),]
+
+#set up the model
+m2 = Hmsc(Y = as.matrix(allzoopCom), XData = as.data.frame(envmat2), 
+          XFormula = ~survey + Month + Ggdist)
+
+#Now do MCMC sampling on it to estimate model parameters
+
+mm2 = sampleMcmc(m2, thin = 10, samples = 1000, transient = 5000,
+                 nChains = 2)
+
+#Check MCMC convergence diagnostics
+mpost = convertToCodaObject(mm2)
+diags = data.frame(effectiveSize(mpost$Beta), 
+                   gelman.diag(mpost$Beta, multivariate=TRUE)$psrf)
+
+save(mm2, mpost, diag, file = "test.RData")
+load("test.RData")
+#We are looking for high effective sample size and
+#scale=reduction factors (gelman.diag) close to 1
+
+#Look at effective sample size graphically
+par(mfrow=c(1,2))
+hist(effectiveSize(mpost$Beta), main="ess(beta)")
+hist(gelman.diag(mpost$Beta, multivariate=TRUE)$psrf, main="psrf(beta)")
+
+#To assess the model’s explanatory power, we apply the evaluateModelFit 
+#function to the posterior predictive
+#distribution simulated by the function computePredictedValues.
+preds = computePredictedValues(mm2, nParallel = 2)
+fit = evaluateModelFit(hM = mm2, predY = preds)
+#
+
+# We next evaluate the model’s predictive power through two-fold cross validation.
+partition = createPartition(mm2, nfolds = 2)
+predscross = computePredictedValues(mm2, partition = partition)
+
+evaluateModelFit(hM = mm2, predY = predscross)
+
+#Let us now look at the estimates of the β parameters. We may do so visually by applying the plotBeta
+#function.
+postBeta = getPostEstimate(mm2, parName = "Beta")
+plotBeta(mm2, post = postBeta, param = "Support", 
+         supportLevel = 0.95, 
+         covNamesNumbers = c(F, F),
+         mar = c(.1,.1,.1,.1))
+plotBeta(mm2, post = postBeta, param = "Mean")
 

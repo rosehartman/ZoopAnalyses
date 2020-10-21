@@ -1,0 +1,47 @@
+Taxlifestage,Tax2,Tax3,Biomass
+Acanthocyclops vernalis Adult,Acanthocyclops,Cyclopoida,0.23
+Acartia_UnID Adult,Acartia,Calanoida,2.98
+Acartia_UnID Juvenile,Pseudodiaptomus,Calanoida,1.30
+Acartiella sinensis Adult,Acartiella,Calanoida,2.67
+Acartiella_UnID Juvenile,Pseudodiaptomus,Calanoida,1.16
+Asplanchna_UnID Adult,Rotifera,Rotifera,0.05
+Bosmina longirostris Adult,Bosmina,Cladocera,0.60
+Calanoida_UnID Adult,Calanoida,Calanoida,3.55
+Calanoida_UnID Juvenile,Calanoida,Calanoida,1.44
+Cirripedia_UnID Larva,Cirripedia,Cirrepedia,3.80
+Cladocera_UnID Adult,Cladocera,Cladocera,4.00
+Copepoda_UnID Larva,Copepoda,UNID,0.10
+Cyclopoida_UnID Adult,Cyclopoda,Cyclopoida,0.23
+Cyclopoida_UnID Juvenile,Sinocalanus,Calanoida,0.07
+Daphnia_UnID Adult,Daphnia,Cladocera,4.00
+Decapoda_UnID Larva,Decapoda,Decapoda,1.00
+Diaphanosoma_UnID Adult,Diaphanosoma,Cladocera,1
+Diaptomidae_UnID Adult,Diaptomidae,Calanoida,4.00
+Diaptomidae_UnID Juvenile,Diaptomidae,Calanoida,0.10
+Eurytemora affinis Adult,Eurytemora,Calanoida,3.55
+Eurytemora affinis Juvenile,Eurytemora,Calanoida,1.44
+Eurytemora_UnID Larva,Eurytemora,Calanoida,0.1
+Harpacticoida_UnID Undifferentiated,Harpactacoida,Harpactacoida,1
+Keratella_UnID Adult,Rotifera,Rotifera,0.1
+Limnoithona sinensis Adult,Limnoithona,Cyclopoida,0.13
+Limnoithona tetraspina Adult,Limnoithona,Cyclopoida,0.13
+Limnoithona_UnID Adult,Limnoithona,Cyclopoida,0.13
+Limnoithona_UnID Juvenile,Limnoithona,Cyclopoida,0.05
+Oithona davisae Adult,Oithona,Cyclopoida,0.23
+Oithona similis Adult,Oithona,Cyclopoida,0.23
+Oithona_UnID Adult,Oithona,Cyclopoida,0.23
+Oithona_UnID Juvenile,Oithona,Cyclopoida,0.07
+Polyarthra_UnID Adult,Rotifera,Rotifera,0.05
+Pseudodiaptomus forbesi Adult,Pseudodiaptomus,Calanoida,3.27
+Pseudodiaptomus marinus Adult,Pseudodiaptomus,Calanoida,4.90
+Pseudodiaptomus_UnID Adult,Pseudodiaptomus,Calanoida,3.50
+Pseudodiaptomus_UnID Juvenile,Pseudodiaptomus,Calanoida,1.2
+Pseudodiaptomus_UnID Larva,Pseudodiaptomus,Calanoida,0.10
+Rotifera_UnID Adult,Rotifera,Rotifera,0.05
+Sinocalanus doerrii Adult,Sinocalanus,Calanoida,3.41
+Sinocalanus_UnID Juvenile,Sinocalanus,Calanoida,1.81
+Sinocalanus_UnID Larva,Sinocalanus,Calanoida,0.10
+Synchaeta_UnID Adult,Rotifera,Rotifera,0.05
+Tortanus_UnID Adult,Tortanus,Calanoida,18.00
+Tortanus_UnID Juvenile,Tortanus,Calanoida,1.00
+Trichocerca_UnID Adult,Rotifera,Rotifera,0.05

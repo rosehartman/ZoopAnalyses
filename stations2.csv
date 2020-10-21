@@ -1,0 +1,119 @@
+Site,Site2,Shallowdeep,Ggdist,SiteType,Region,survey,Station
+Arnold,Arnold,N,75,Diked,Suisun Marsh,FRP,Arnold Restoration
+Little Honker Bay,Blacklock,Y,75,Tidal,Suisun Marsh,FRP,Blacklock
+Bradmoor,Bradmoor,N,75,Diked,Suisun Marsh,FRP,322 Bradmoor
+Bradmoor,Bradmoor,N,75,Diked,Suisun Marsh,FRP,329 East Bradmoor
+Bradmoor,Bradmoor,N,75,Diked,Suisun Marsh,FRP,330 South Bradmoor
+Bradmoor,Bradmoor,N,75,Diked,Suisun Marsh,FRP,BRAD_UNK
+Bradmoor,Bradmoor,N,75,Diked,Suisun Marsh,FRP,Bradmoor
+Winter,Broad Slough,Y,80,Channel,Confluence,20mm,801
+Dow Wetlands,Broad Slough,N,80,Channel,Confluence,FRP,Dow Outside
+Winter,Broad Slough,Y,80,Channel,Confluence,EMP,NZ060
+Winter,Broad Slough,Y,80,Channel,Confluence,FRP,801 FRP
+Browns,Broad Slough,Y,80,Channel,Confluence,20mm,513
+Browns,Browns,Y,80,Tidal,Confluence,FRP,Browns 1
+Browns,Browns,Y,80,Tidal,Confluence,FRP,Browns Channel
+Browns,Browns,Y,80,Tidal,Confluence,FRP,Browns1
+Browns,Browns,Y,80,Tidal,Confluence,FRP,BrownsPond
+Browns,Broad Slough,Y,80,Tidal,Confluence,EMP,NZ054
+Cache,Cache,N,115,Channel,Cache,20mm,723
+Cache,Cache,N,115,Channel,Cache,FRP,723 FRP
+Cache,Cache,N,115,Channel,Cache,FRP,Lookout Vogel Outside
+Cache,Cache,N,115,Channel,Cache,FRP,LookoutVogelOutside
+Chipps,Chipps,N,75,Muted,Confluence,FRP,Chipps Met
+Chipps,Chipps,N,75,Muted,Confluence,FRP,Chipps North
+Horseshoe Bend,Decker,Y,92,Muted,Sac SanJ,FRP,Decker Breach
+Horseshoe Bend,Decker,N,92,Muted,Sac SanJ,FRP,Decker Channel
+Horseshoe Bend,Decker,N,92,Muted,Sac SanJ,FRP,Decker Inside
+Dow Wetlands,Dow Wetlands,N,80,Tidal,Confluence,FRP,Dow 2
+Dow Wetlands,Dow Wetlands,N,80,Tidal,Confluence,FRP,Dow 3
+Dow Wetlands,Dow Wetlands,N,80,Tidal,Confluence,FRP,Dow 4
+Dow Wetlands,Dow Wetlands,N,80,Tidal,Confluence,FRP,Dow 5
+Dow Wetlands,Dow Wetlands,N,80,Tidal,Confluence,FRP,Dow Breach
+Dow Wetlands,Dow Wetlands,N,80,Tidal,Confluence,EMP,NZ074
+Flyway,Flyway,N,125,Tidal,Cache,FRP,Flyway
+Flyway,Flyway,N,125,Tidal,Cache,FRP,Flyway Channel
+Flyway,Flyway,N,125,Tidal,Cache,FRP,FlywayChannel1
+Grizzly Bay,Grizzly Bay,Y,65,Channel,Suisun Bay,20mm,602
+Grizzly Bay,Grizzly Bay,Y,65,Channel,Suisun Bay,FRP,602FRP
+Grizzly Bay,Grizzly Bay,Y,65,Channel,Suisun Bay,FRP,GRIZ_UNK
+Grizzly Bay,Grizzly Bay,Y,65,Channel,Suisun Bay,EMP,NZ028
+Horseshoe Bend,Horseshoe Bend,Y,92,Channel,Sac SanJ,20mm,705
+Horseshoe Bend,Horseshoe Bend,Y,92,Channel,Sac SanJ,20mm,706
+Horseshoe Bend,Horseshoe Bend,Y,92,Channel,Sac SanJ,FRP,705 FRP
+Horseshoe Bend,Horseshoe Bend,Y,92,Channel,Sac SanJ,FRP,706 FRP
+Horseshoe Bend,Horseshoe Bend,Y,92,Channel,Sac SanJ,FRP,Horsebend1
+Horseshoe Bend,Horseshoe Bend,N,92,Channel,Sac SanJ,FRP,HorseBend3
+Horseshoe Bend,Horseshoe Bend,Y,92,Channel,Sac SanJ,EMP,NZ064
+Liberty,Liberty,N,110,Tidal,Cache,FRP,NELiberty
+Liberty,Liberty,N,110,Tidal,Cache,FRP,NWLiberty
+Liberty,Liberty,N,110,Tidal,Cache,FRP,SELiberty
+Liberty,Liberty,N,110,Tidal,Cache,FRP,SWLiberty
+Lindsey,Lindsey,Y,130,Channel,Cache,20mm,720
+Lindsey,Lindsey,Y,130,Channel,Cache,FRP,720 FRP
+Lindsey,Lindsey Marsh,Y,130,Tidal,Cache,FRP,LinBr
+Lindsey,Lindsey Marsh,Y,130,Tidal,Cache,FRP,LinBR
+Lindsey,Lindsey Marsh,Y,130,Tidal,Cache,FRP,Lindsey tules
+Lindsey,Lindsey Marsh,Y,130,Tidal,Cache,FRP,Lindsey Tules
+Little Honker Bay,Little Honker Bay,Y,75,Channel,Suisun Marsh,20mm,609
+Little Honker Bay,Little Honker Bay,Y,75,Channel,Suisun Marsh,FRP,609 FRP
+Little Honker Bay,Little Honker Bay,Y,75,Channel,Suisun Marsh,EMP,NZ032
+Lookout,Lookout,N,115,Diked,Cache,FRP,LOOK_UNK
+Lookout,Lookout,N,115,Diked,Cache,FRP,LookoutSlough
+Lookout,Lookout,N,115,Diked,Cache,FRP,LookoutSouthPond
+Lookout,Lookout,N,115,Diked,Cache,FRP,LookoutSycamore
+Prospect,Miner,Y,115,Channel,Cache,20mm,724
+Prospect,Miner,Y,120,Channel,Cache,20mm,726
+Prospect,Miner,Y,115,Channel,Cache,FRP,724 FRP
+Prospect,Miner,Y,120,Channel,Cache,FRP,726 FRP
+Prospect,Miner,N,115,Channel,Cache,FRP,MinSlo1
+Wings,Peytonia,Y,70,Channel,Suisun Marsh,EMP,NZS42
+Wings,Peytonia,Y,70,Channel,Suisun Marsh,FRP,Wings 1
+Prospect,Prospect,Y,115,Muted,Cache,FRP,ProBr
+Prospect,Prospect,Y,115,Muted,Cache,FRP,ProBR
+Prospect,Prospect,N,115,Muted,Cache,FRP,SoPro
+Prospect,Prospect,N,115,Muted,Cache,FRP,SoPro1
+Prospect,Prospect,N,115,Muted,Cache,FRP,SoPro2
+Prospect,Prospect,N,115,Muted,Cache,FRP,SoPro3
+Prospect,Prospect,N,115,Muted,Cache,FRP,SoPro4
+Prospect,Prospect,N,115,Muted,Cache,FRP,SoPro5
+Prospect,Prospect,N,115,Muted,Cache,FRP,SoPro6
+Prospect,Prospect,N,115,Muted,Cache,FRP,SoPro7
+Ryer Island,Grizzly Bay,N,60,Channel,Suisun Bay,20mm,501
+Ryer Island,Ryer Island,N,60,Tidal,Suisun Bay,FRP,501 FRP
+Ryer Island,Ryer Island,N,60,Tidal,Suisun Bay,FRP,Ryer 2
+Ryer Island,Ryer Island,N,60,Tidal,Suisun Bay,FRP,Ryer 2nd channel
+Ryer Island,Ryer Island,N,60,Tidal,Suisun Bay,FRP,Ryer 3
+Ryer Island,Ryer Island,N,60,Tidal,Suisun Bay,FRP,Ryer1
+Ryer Island,Ryer Island,N,60,Tidal,Suisun Bay,FRP,Ryer2
+Ryer Island,Ryer Island,N,60,Tidal,Suisun Bay,FRP,Ryer2ndChannel
+Ryer Island,Ryer Island,N,60,Tidal,Suisun Bay,FRP,Ryer3
+Ryer Island,Ryer Island,N,60,Tidal,Suisun Bay,FRP,RyerChannel
+Sherman Lake,Sacramento R,Y,85,Channel,Confluence,20mm,703
+Sherman Lake,Sherman Lake,Y,85,Tidal,Confluence,FRP,703 FRP
+Stacys,San J,Y,105,Channel,Sac SanJ,20mm,815
+Stacys,San J,Y,105,Channel,Sac SanJ,EMP,NZ086
+Stacys,Stacys,Y,105,Tidal,Sac SanJ,FRP,STACYS
+Stacys,Stacys,Y,105,Tidal,Sac SanJ,FRP,Stacys Island
+Stacys,Stacys,Y,105,Tidal,Sac SanJ,FRP,Stacy's Island
+Stacys,Stacys,Y,105,Tidal,Sac SanJ,FRP,Webb
+Flyway,Toe Drain,N,125,Channel,Cache,FRP,Toedrain1
+Tule Red,Tule Red,N,65,Diked,Suisun Bay,FRP,TR1
+Tule Red,Tule Red,N,65,Diked,Suisun Bay,FRP,TR2
+Tule Red,Tule Red,N,65,Diked,Suisun Bay,FRP,TR3
+Tule Red,Tule Red,N,65,Diked,Suisun Bay,FRP,TR4
+Tule Red,Tule Red,N,65,Diked,Suisun Bay,FRP,TR5
+Tule Red,Tule Red,N,65,Diked,Suisun Bay,FRP,TR6
+Tule Red,Tule Red,N,65,Diked,Suisun Bay,FRP,TR7
+Tule Red,Tule Red,N,65,Diked,Suisun Bay,FRP,TULE_UNK
+Wings,Wings,N,70,Diked,Suisun Marsh,FRP,Wings Brood Pond
+Winter,Winter,Y,80,Muted,Confluence,FRP,WinBr
+Winter,Winter,Y,80,Muted,Confluence,FRP,WinBR
+Winter,Winter,Y,80,Muted,Confluence,FRP,Winter 1
+Winter,Winter,Y,80,Muted,Confluence,FRP,Winter 2
+Winter,Winter,N,80,Muted,Confluence,FRP,Winter 3
+Winter,Winter,N,80,Muted,Confluence,FRP,Winter 5
+Winter,Winter,Y,80,Muted,Confluence,FRP,Winter Channel
+Winter,Winter,Y,80,Muted,Confluence,FRP,WinterChannel
+Winter,Winter,N,80,Muted,Confluence,FRP,WinterNorth
+Winter,Winter,N,80,Muted,Confluence,FRP,WinterPondsEast

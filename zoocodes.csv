@@ -1,0 +1,530 @@
+ZooCode,FishCode,CommonName,Phylum,Class,Order,Family,Genus,Species,LifeStage,fishDiet,Analy,Analy2,CN
+78,,Corophiid UNID,Arthropoda,Malacostraca,Amphipoda,Corophiidae,unknown,,adult,TRUE,Amphipoda,Amphipoda,Chorophiid
+112,,Amphipod juvenile,Arthropoda,Malacostraca,Amphipoda,,,,larvae,TRUE,Amphipoda,Amphipoda,Amphipod
+150,,Amphipod UNID/other,Arthropoda,Malacostraca,Amphipoda,,,,adult,TRUE,Amphipoda,Amphipoda,Amphipod
+267,,Corophiid Juvenile,Arthropoda,Malacostraca,Amphipoda,Corophiidae,,,larvae,TRUE,Amphipoda,Amphipoda,Chorophiid
+300,,Americorophium spinicorne,Arthropoda,Malacostraca,Amphipoda,Corophiidae,Americorophium,spinicorne,adult,TRUE,Amphipoda,Amphipoda,Americorophium spinicorne
+301,,Americorophium stimpsoni,Arthropoda,Malacostraca,Amphipoda,Corophiidae,Americorophium,stimpsoni,adult,TRUE,Amphipoda,Amphipoda,Americorophium stimpsoni
+302,,Corophium alienense,Arthropoda,Malacostraca,Amphipoda,Corophiidae,Corophium,alienense,adult,TRUE,Amphipoda,Amphipoda,Chorophiid
+77,,Gammarus,Arthropoda,Malacostraca,Amphipoda,Gammaridae,Gammarus,spp.,adult,TRUE,Gammaridae,Amphipoda,Gammarus
+110,,Crangonyx,Arthropoda,Malacostraca,Amphipoda,Crangonycitidae,Crangonyx,,adult,TRUE,Gammaridae,Amphipoda,Crangonyx
+111,,Hyalella,Arthropoda,Malacostraca,Amphipoda,Hyalellidae,Hyalella,,adult,TRUE,Gammaridae,Amphipoda,Hyalella
+246,,Grandidierella,Arthropoda,Malacostraca,Amphipoda,Aoridae,Grandidierella,spp.,adult,TRUE,Gammaridae,Amphipoda,Grandidierella
+253,,Melita,Arthropoda,Malacostraca,Amphipoda,Hadzioidea,Melita,,adult,TRUE,Gammaridae,Amphipoda,Amphipod
+254,,Ampithoe,Arthropoda,Malacostraca,Amphipoda,Ampithoidae,Ampithoe,,adult,TRUE,Gammaridae,Amphipoda,Amphipod
+303,,Gammarid juvenile,Arthropoda,Malacostraca,Amphipoda,Gammaridae,,,adult,TRUE,Gammaridae,Amphipoda,Gammarid
+10000,,Eogammarus,Arthropoda,Malacostraca,Amphipoda,Anisogammaridae,Eogammarus,,adult,FALSE,Gammaridae,Amphipoda,Eogammarus
+1,,Worm UNID/other,Annelida,,,,,,adult,FALSE,Annelida,Annelida,worm
+101,,Leech,Annelida,Hirudinea,,,,,adult,FALSE,Annelida,Annelida,leech
+102,,Oligocheate,Annelida,Oligocheata,,,,,adult,FALSE,Annelida,Annelida,Oligocheate
+180,,Lumbricidae,Annelida,Oligochaeta,Haplotaxida,Lumbricidae,,,adult,FALSE,Annelida,Annelida,Oligocheate
+217,,Hediste limnicola,Annelida,Polychaeta,Phyllodocida,Nereididae,Hediste,limnicola,adult,FALSE,Annelida,Annelida,Polychaeate
+220,,Polychaete,Annelida,Polychaeta,,,,,adult,FALSE,Annelida,Annelida,Polychaeate
+227,,Stylaria,Annelida,Clitellata,Haplotaxida,Tubificina,Stylaria,,adult,FALSE,Annelida,Annelida,Clitelleate
+105,,Spider,Arthropoda,Arachnida,Araneae,,,,adult,TRUE,Arachnida,Arachnida,Spider
+106,,Mite,Arthropoda,Arachnida,Hydracarina,,,,adult,FALSE,Arachnida,Arachnida,Mite
+11,,Barnacle Nauplii,Arthropoda,Cirripedia,,,,,larvae,FALSE,barnacle,barnacle,Barnacle Nauplii
+61,,Bosmina,Arthropoda,Branchiopoda,Cladocera,,Bosmina,longirostris,adult,TRUE,Cladocera,Cladocera,Bosmina
+62,,Daphnia,Arthropoda,Branchiopoda,Cladocera,,Daphnia,spp.,adult,TRUE,Cladocera,Cladocera,Daphnia
+63,,Diaphanosoma,Arthropoda,Branchiopoda,Cladocera,,Diaphanosoma,spp.,adult,TRUE,Cladocera,Cladocera,Diaphanosoma
+64,,Ceriodaphnia,Arthropoda,Branchiopoda,Cladocera,,Ceriodaphnia,spp.,adult,TRUE,Cladocera,Cladocera,Ceriodaphnia
+69,,cladocera other,Arthropoda,Branchiopoda,Cladocera,,,,adult,TRUE,Cladocera,Cladocera,cladocera other
+107,,Cladocera,Arthropoda,Branchiopoda,Cladocera,,,,adult,TRUE,Cladocera,Cladocera,Cladocera
+250,,Chydorus,Arthropoda,Branchiopoda,Cladocera,Chydoridae,Chydorus,,adult,TRUE,Cladocera,Cladocera,Chydorus
+251,,Moina,Arthropoda,Branchiopoda,Cladocera,Moinidae,Moina,,adult,TRUE,Cladocera,Cladocera,Moina
+252,,Sida,Arthropoda,Branchiopoda,Cladocera,Sididae,Sida,,adult,TRUE,Cladocera,Cladocera,Sida
+255,,Simocephalus,Arthropoda,Branchiopoda,Cladocera,Daphniidae,Simocephalus,,adult,TRUE,Cladocera,Cladocera,Simocephalus
+257,,Ilyocryptus,Arthropoda,Branchiopoda,Cladocera,Ilyocryptidae,Ilyocryptus,,adult,TRUE,Cladocera,Cladocera,Ilyocryptus
+258,,Scapholeberis,Arthropoda,Branchiopoda,Cladocera,Daphniidae,Scapholeberis,,adult,TRUE,Cladocera,Cladocera,Scapholeberis
+265,,Holopedium,Arthropoda,Branchiopoda,Cladocera,Holopedidae,Holopedium,,adult,TRUE,Cladocera,Cladocera,Holopedium
+266,,Macrothricidae,Arthropoda,Branchiopoda,Cladocera,Macrothricidae,,,adult,TRUE,Cladocera,Cladocera,Macrothricidae
+268,,Leptodora,Arthropoda,Brachiopoda,Cladocera,Leptodoridae,Leptodora,,adult,TRUE,Cladocera,Cladocera,Leptodora
+269,,Latona,Arthropoda,Branchiopoda,Cladocera,Sididae,Latona,,adult,TRUE,Cladocera,Cladocera,Latona
+137,,Hydra,Cnidaria,Hydrozoa,Hydrida,Hydridae,Hydra,,adult,FALSE,Cnidaria,Cnidaria,Hydra
+104,,Collembola,Arthropoda,Collembola,,,,,adult,TRUE,Collembola,Collembola,Collembola
+31,,Acartia spp.,Arthropoda,Copepoda,Calanoida,,Acartia,spp.,adult,TRUE,Calanoida,Copepoda,Acartia spp.
+32,,Diaptomidae spp.,Arthropoda,Copepoda,Calanoida,Diaptomidae,,,adult,TRUE,Calanoida,Copepoda,Diaptomidae spp.
+33,,Pseudodiaptomus spp.,Arthropoda,Copepoda,Calanoida,,Pseudodiaptomus,spp.,adult,TRUE,Calanoida,Copepoda,Pseudodiaptomus spp.
+34,,Eurytemora affinis,Arthropoda,Copepoda,Calanoida,,Eurytemora,affinis,adult,TRUE,Calanoida,Copepoda,Eurytemora affinis
+35,,Sinocalanus,Arthropoda,Copepoda,Calanoida,,Sinocalanus,doerrii,adult,TRUE,Calanoida,Copepoda,Sinocalanus
+36,,Osphranticum,Arthropoda,Copepoda,Calanoida,,Osphranticum,labronectum,adult,TRUE,Calanoida,Copepoda,Osphranticum
+37,,Acartiella,Arthropoda,Copepoda,Calanoida,,Acartiella,sinensis,adult,TRUE,Calanoida,Copepoda,Acartiella
+38,,Tortanus,Arthropoda,Copepoda,Calanoida,,Tortanus,sp.,adult,TRUE,Calanoida,Copepoda,Tortanus
+39,,Acartia copepodid,Arthropoda,Copepoda,Calanoida,,Acartia,,juvenile,TRUE,Calanoida,Copepoda,Acartia copepodid
+40,,calanoid copepodid,Arthropoda,Copepoda,Calanoida,,,,juvenile,TRUE,Calanoida,Copepoda,calanoid copepodid
+41,,Eurytemora copepodid,Arthropoda,Copepoda,Calanoida,,Eurytemora,affinis,juvenile,TRUE,Calanoida,Copepoda,Eurytemora copepodid
+42,,Pseudodiaptomus copepodid,Arthropoda,Copepoda,Calanoida,,Pseudodiaptomus,spp.,juvenile,TRUE,Calanoida,Copepoda,Pseudodiaptomus copepodid
+43,,Pseudodiaptomus euryhalinus,Arthropoda,Copepoda,Calanoida,,Pseudodiaptomus,euryhalinus,adult,TRUE,Calanoida,Copepoda,Pseudodiaptomus euryhalinus
+44,,Diaptomidae copepodid,Arthropoda,Copepoda,Calanoida,Diaptomidae,,,juvenile,TRUE,Calanoida,Copepoda,Diaptomidae copepodid
+45,,Acartiella copepodid,Arthropoda,Copepoda,Calanoida,,Acartiella,,juvenile,TRUE,Calanoida,Copepoda,Acartiella copepodid
+46,,Tortanus copepodid,Arthropoda,Copepoda,Calanoida,,Tortanus,,juvenile,TRUE,Calanoida,Copepoda,Tortanus copepodid
+47,,Tortanus dextrilobatus,Arthropoda,Copepoda,Calanoida,,Tortanus,dextrilobatus,adult,TRUE,Calanoida,Copepoda,Tortanus dextrilobatus
+48,,Calanoid UNID/other,Arthropoda,Copepoda,Calanoida,,,,adult,TRUE,Calanoida,Copepoda,Calanoid UNID/other
+49,,Calanoid Other,Arthropoda,Copepoda,Calanoida,,,,adult,TRUE,Calanoida,Copepoda,Calanoid Other
+50,,Tortanus discaudatus,Arthropoda,Copepoda,Calanoida,,Tortanus,discaudatus,adult,TRUE,Calanoida,Copepoda,Tortanus discaudatus
+80,,Eurytemora nauplii,Arthropoda,Copepoda,Calanoida,,Eurytemora,,larvae,TRUE,Calanoida,Copepoda,Eurytemora nauplii
+81,,Sinocalanus nauplii,Arthropoda,Copepoda,Calanoida,,Sinocalanus,,larvae,TRUE,Calanoida,Copepoda,Sinocalanus nauplii
+82,,Pseudodiaptomus nauplii,Arthropoda,Copepoda,Calanoida,,Pseudodiaptomus,spp.,larvae,TRUE,Calanoida,Copepoda,Pseudodiaptomus nauplii
+83,,Sinocalanus copepodid,Arthropoda,Copepoda,Calanoida,,Sinocalanus,,juvenile,TRUE,Calanoida,Copepoda,Sinocalanus copepodid
+86,,Pseudodiaptomus forbesii,Arthropoda,Copepoda,Calanoida,,Pseudodiaptomus,forbesii,adult,TRUE,Calanoida,Copepoda,Pseudodiaptomus forbesii
+87,,Pseudodiaptomus marinus,Arthropoda,Copepoda,Calanoida,,Pseudodiaptomus,marinus,adult,TRUE,Calanoida,Copepoda,Pseudodiaptomus marinus
+108,,Calanoid,Arthropoda,Copepoda,Calanoida,,,,adult,TRUE,Calanoida,Copepoda,Calanoid
+304,,Eurytemora (gravid),Arthropoda,Copepoda,Calanoida,,Eurytemora,affinis,adult,TRUE,Calanoida,Copepoda,Eurytemora (gravid)
+305,,P. forbesi (gravid),Arthropoda,Copepoda,Calanoida,,Pseudodiaptomus,forbesi,adult,TRUE,Calanoida,Copepoda,P. forbesi (gravid)
+306,,Sinocalanus (gravid),Arthropoda,Copepoda,Calanoida,,Sinocalanus,doerii,adult,TRUE,Calanoida,Copepoda,Sinocalanus (gravid)
+307,,Osphranticum (gravid),Arthropoda,Copepoda,Calanoida,,Osphranticum,labronectum,adult,TRUE,Calanoida,Copepoda,Osphranticum (gravid)
+308,,Diaptomidae (gravid),Arthropoda,Copepoda,Calanoida,Diaptomidae,,,adult,TRUE,Calanoida,Copepoda,Diaptomidae (gravid)
+309,,P. marinus (gravid),Arthropoda,Copepoda,Calanoida,,Pseudodiaptomus,marinus,adult,TRUE,Calanoida,Copepoda,P. marinus (gravid)
+310,,Calanoid copepod (gravid),Arthropoda,Copepoda,Calanoida,,,,adult,TRUE,Calanoida,Copepoda,Calanoid copepod (gravid)
+20,,Cyclopoid copepodid,Arthropoda,Copepoda,Cyclopoida,,,,juvenile,TRUE,Cyclopoida,Copepoda,Cyclopoid copepodid
+21,,Acanthocyclops,Arthropoda,Copepoda,Cyclopoida,,Acanthocyclops,vernalis,adult,TRUE,Cyclopoida,Copepoda,Acanthocyclops
+22,,Oithona similis,Arthropoda,Copepoda,Cyclopoida,,Oithona,similis,adult,TRUE,Cyclopoida,Copepoda,Oithona similis
+23,,Oithona davisae,Arthropoda,Copepoda,Cyclopoida,,Oithona,davisae,adult,TRUE,Cyclopoida,Copepoda,Oithona davisae
+24,,Limnoithona spp.,Arthropoda,Copepoda,Cyclopoida,,Limnothoina,spp.,adult,FALSE,Cyclopoida,Copepoda,Limnoithona spp.
+25,,Limnoithona sinensis,Arthropoda,Copepoda,Cyclopoida,,Limnoithona,sinensis,adult,FALSE,Cyclopoida,Copepoda,Limnoithona sinensis
+26,,Limnoithona tetraspina,Arthropoda,Copepoda,Cyclopoida,,Limnoithona,tetraspina,adult,FALSE,Cyclopoida,Copepoda,Limnoithona tetraspina
+27,,Oithona spp.,Arthropoda,Copepoda,Cyclopoida,,Oithona,spp,adult,TRUE,Cyclopoida,Copepoda,Oithona spp.
+28,,Cyclopoid UNID,Arthropoda,Copepoda,Cyclopoida,,,,adult,TRUE,Cyclopoida,Copepoda,Cyclopoid UNID
+29,,Cyclopoid Other,Arthropoda,Copepoda,Cyclopoida,,,,adult,TRUE,Cyclopoida,Copepoda,Cyclopoid Other
+84,,Limnoithona juvenile,Arthropoda,Copepoda,Cyclopoida,,,,juvenile,TRUE,Cyclopoida,Copepoda,Limnoithona juvenile
+85,,Oithona juvenile,Arthropoda,Copepoda,Cyclopoida,,,,juvenile,TRUE,Cyclopoida,Copepoda,Oithona juvenile
+109,,Cyclopoid,Arthropoda,Copepoda,Cyclopodia,,,,adult,TRUE,Cyclopoida,Copepoda,Cyclopoid
+247,,Halicyclops,Arthropoda,Copepoda,Cyclopoida,Cyclopidae,Halicyclops,,adult,TRUE,Cyclopoida,Copepoda,Halicyclops
+248,,Diacyclops,Arthropoda,Copepoda,Cyclopoida,Cyclopodidae,Diacyclops,thomasi,adult,TRUE,Cyclopoida,Copepoda,Diacyclops
+259,,Eucyclops,Arthropoda,Copepoda,Cyclopoida,Cyclopidae,Eucyclops,,adult,TRUE,Cyclopoida,Copepoda,Eucyclops
+261,,Macrocyclops,Arthropoda,Copepoda,Cyclopoida,Cyclopidae,Macrocyclops,,adult,TRUE,Cyclopoida,Copepoda,Macrocyclops
+262,,Homocyclops,Arthropoda,Copepoda,Cyclopoida,Cyclopidae,Homocyclops,,adult,TRUE,Cyclopoida,Copepoda,Homocyclops
+263,,Mesocyclops,Arthropoda,Copepoda,Cyclopoida,Cyclopidae,Mesocyclops,,adult,TRUE,Cyclopoida,Copepoda,Mesocyclops
+311,,Paracyclops,Arthropoda,Copepoda,Cyclopoida,Cyclopidae,Paracyclops,,adult,TRUE,Cyclopoida,Copepoda,Paracyclops
+316,,Microcyclops,Arthropoda,Copepoda,Cyclopoida,Cyclopidae,Microcyclops,,adult,TRUE,Cyclopoida,Copepoda,Microcyclops
+59,,Harpacticoids,Arthropoda,Copepoda,Harpacticoida,,,,adult,TRUE,Harpacticoida,Copepoda,Harpacticoid
+12,,Copepod Nauplii,Arthropoda,Copepoda,,,,,larvae,FALSE,other,Copepoda,Copepod Nauplii
+151,,Copepod UNID,Arthropoda,Copepoda,,,,,adult,TRUE,other,Copepoda,Copepod UNID
+312,,Parasitic Copepod,Arthropoda,Copepoda,,,,,adult,FALSE,other,Copepoda,Parasitic Copepod
+72,,Cumaceans,Arthropoda,Malacostraca,Cumacea,,,,adult,TRUE,Cumacea,Cumacea,Cumaceans
+74,,crab zoea,Arthropoda,Malacostraca,Decapoda,,,,larvae,TRUE,Decapoda,Decapoda,crab zoea
+75,PALAEM,Palaemon,Arthropoda,Malacostraca,Decapoda,Caridae,Palaemon,macrodactylus,adult,FALSE,Decapoda,Decapoda,Palaemon
+76,CRANGO,Crangon,Arthropoda,Malacostraca,Decapoda,Caridae,Crangon,,adult,FALSE,Decapoda,Decapoda,Crangon
+94,,Crab megalope,Arthropoda,Malacostraca,Decapoda,,,,larvae,FALSE,Decapoda,Decapoda,Crab megalope
+136,EXOPAL,Exopalaemon,Arthropoda,Malacostraca,Decapoda,Palaemonidae,Exopalaemon,modestus,adult,TRUE,Decapoda,Decapoda,Exopalaemon
+156,,Shrimp Other,Arthropoda,Malacostraca,Decapoda,,,,adult,FALSE,Decapoda,Decapoda,Shrimp Other
+171,CRAYFI,Crayfish,Arthropoda,Malacostraca,Decapoda,Astacidae,Pacifastacus,,adult,FALSE,Decapoda,Decapoda,Crayfish
+216,MISSHR,Palaemonetes,Arthropoda,Malacostraca,Decapoda,Palaemonidae,Palaemonectes,,adult,FALSE,Decapoda,Decapoda,Palaemonetes
+224,,Shrimp juvenile,Arthropoda,Malacostraca,Decapoda,,,,larvae,FALSE,Decapoda,Decapoda,Shrimp juvenile
+193,,Earwig,Arthropoda,Insecta,Dermaptera,,,,adult,TRUE,Dermaptera,Decapoda,Other
+5,UNID,Fish UNID,Chordata,,,,,,,FALSE,fish,fish,fish
+6,,Fish Eggs,Chordata,,,,,,egg,FALSE,fish,fish,fish
+153,,Inland Silverside,Chordata,Actinopterygii,Atheriniformes,Atherinopsidae,Menidia,beryllina,larvae,FALSE,fish,fish,Silverside
+164,MOSQUI,Mosquitofish,Chordata,Actinopterygii,Cyprinodontiformes,Poeciliidae,Gambusia,affinis,larvae,FALSE,fish,fish,Mosquitofish
+175,SACSUC,Sacramento Sucker,Chordata,Actinopterygii,Cypriniformes,Catostomidae,Catostomus,occidentalis,,FALSE,fish,fish,Sacramento Sucker
+177,PRISCU,Prickly Sculpin,Chordata,Actinopterygii,Scorpaeniformes,Cottidae,Cottus,aspur,,FALSE,fish,fish,Prickly Sculpin
+186,RAIKIL,Rainwater Killifish,Chordata,Actinopterygii,Cyprinodontiformes,Fundulidae,Lucania,parva,,FALSE,fish,fish,Rainwater Killifish
+195,,Fish larvae,Chordata,Actinopterygii,,,,,larvae,TRUE,fish,fish,Fish larvae
+197,MISSIL,Mississippi Silverside,Chordata,Actinopterygii,Atheriniformes,Atherinopsidae,Menidia,berryllia,larvae,FALSE,fish,fish,Mississippi Silverside
+238,STRBAS,Striped Bass,Chordata,Actinopterygii,Perciformes,Moronidae,Morone,saxatilis,larvae,FALSE,fish,fish,Striped Bass
+902,AMESHA,American Shad,Chordata,Actinopterygii,Clupeiformes,Clupeidae,Alosa,sapidissima,adult,,fish,fish,American Shad
+903,ARRGOB,Arrow Goby,Chordata,Actinopterygii,Gobiiformes,Oxudercidae,Clevelandia,ios,adult,,fish,fish,Arrow Goby
+904,BARSUR,Barred Surfperch,Chordata,Actinopterygii,,Embiotocidae,Amphistichus,argenteus,adult,,fish,fish,Barred Surfperch
+905,BATRAY,Bat Ray,Chordata,Elasmobranchii,Myliobatiformes,Myliobatidae,Myliobatis,californica,adult,,fish,fish,Bat Ray
+906,BAYGOB,Bay Goby,Chordata,Actinopterygii,Gobiiformes,Oxudercidae,Lepidogobius,lepidus,adult,,fish,fish,Bay Goby
+907,BAYPIP,Bay Pipefish,Chordata,Actinopterygii,Syngnathiformes,Syngnathidae,Syngnathus,leptorhynchus,adult,,fish,fish,Bay Pipefish
+908,BIGSKA,Big Skate,Chordata,Elasmobranchii,Rajiformes,Rajidae,Raja,binoculata,adult,,fish,fish,Big Skate
+909,BIGLOG,Bigscale Logperch,Chordata,Actinopterygii,Perciformes,Percidae,Percidae,macrolepida,adult,,fish,fish,Bigscale Logperch
+910,BLABAS,Black Bass (unknown species),Chordata,Actinopterygii,Perciformes,Centrarchidae,,,adult,,fish,fish,Black Bass (unknown species)
+911,BLABUL,Black Bullhead,Chordata,Actinopterygii,Siluriformes,Ictaluridae,Ameiurus,melas,adult,,fish,fish,Black Bullhead
+912,BLACRA,Black Crappie,Chordata,Actinopterygii,Perciformes,Centrarchidae,Pomoxis,nigromaculatus,adult,,fish,fish,Black Crappie
+913,BLACKF,Blackfordia,Cnidaria,Hydrozoa,Leptothecata,Blackfordiidae,Blackfordia,,adult,,fish,fish,Blackfordia
+914,BLUCAT,Blue Catfish,Chordata,Actinopterygii,Siluriformes,Ictaluridae,Ictalurus,furcatus,adult,,fish,fish,Blue Catfish
+915,BLUKIL,Bluefin Killifish,Chordata,Actinopterygii,Cyprinodontiformes,Fundulidae,Lucania,goodei,adult,,fish,fish,Bluefin Killifish
+916,BLUEGI,Bluegill,Chordata,Actinopterygii,Perciformes,Centrarchidae,Lepomis,macrochirus,adult,,fish,fish,Bluegill
+917,BROBUL,Brown Bullhead,Chordata,Actinopterygii,Siluriformes,Ictaluridae,Ameiurus,nebulosus,adult,,fish,fish,Brown Bullhead
+918,CALROA,California Roach,Chordata,Actinopterygii,Cypriniformes,Cyprinidae,Hesperoleucus,symmetricus,adult,,fish,fish,California Roach
+919,CHAGOB,Chameleon Goby,Chordata,Actinopterygii,Gobiiformes,Oxudercidae,Tridentiger,trigonocephalus,adult,,fish,fish,Chameleon Goby
+920,CHACAT,Channel Catfish,Chordata,Actinopterygii,Siluriformes,Ictaluridae,Ictalurus,punctatus,adult,,fish,fish,Channel Catfish
+921,CHISAL,Chinook Salmon,Chordata,Actinopterygii,Salmoniformes,Salmonidae,Oncorhynchus,tshawytscha,adult,,fish,fish,Chinook Salmon
+922,CHRYSO,Chrysaora,Cnidaria,Scyphozoa,Semaeostomeae,Pelagiidae,Chrysaora,,adult,,fish,fish,Chrysaora
+923,COMJEL,Comb Jelly,Ctenophora,Tentaculata,Cydippida,Pleurobrachiidae,Pleurobrachia,,adult,,fish,fish,Comb Jelly
+924,COMCAR,Common Carp,Chordata,Actinopterygii,Cypriniformes,Cyprinidae,Cyprinus,carpio,adult,,fish,fish,Common Carp
+926,CRASPP,Crappie spp.,Chordata,Actinopterygii,Perciformes,Centrarchidae,Pomoxis,,adult,,fish,fish,Crappie spp.
+927,CYPSPP,Cyprinid spp.,Chordata,Actinopterygii,Cypriniformes,Cyprinidae,unknown,,adult,,fish,fish,Cyprinid spp.
+928,DELSME,Delta Smelt,Chordata,Actinopterygii,Osmeriformes,Osmeridae,Hypomesus,transpacificus,adult,,fish,fish,Delta Smelt
+930,FATMIN,Fathead Minnow,Chordata,Actinopterygii,Cypriniformes,Cyprinidae,Pimephales,promelas,adult,,fish,fish,Fathead Minnow
+931,GOLSHI,Golden Shiner,Chordata,Actinopterygii,Cypriniformes,Cyprinidae,Notemigonus,crysoleucas,adult,,fish,fish,Golden Shiner
+932,GOLDFI,Goldfish,Chordata,Actinopterygii,Cypriniformes,Cyprinidae,Carassius,auratus,adult,,fish,fish,Goldfish
+933,GRESTU,Green Sturgeon,Chordata,Actinopterygii,Acipenseriformes,Acipenseridae,Acipenser,medirostris,adult,,fish,fish,Green Sturgeon
+934,GRESUN,Green Sunfish,Chordata,Actinopterygii,Perciformes,Centrarchidae,Lepomis,cyanellus,adult,,fish,fish,Green Sunfish
+935,HARDHE,Hardhead,Chordata,Actinopterygii,Cypriniformes,Cyprinidae,Mylopharodon,conocephalus,adult,,fish,fish,Hardhead
+936,HARMUD,Harris Mud Crab,Arthropoda,Malacostraca,Decapoda,,Rhithropanopeus,harrisii,adult,,fish,fish,Harris Mud Crab
+937,HITCH,Hitch,Chordata,Actinopterygii,Cypriniformes,Cyprinidae,Lavinia,exilicauda,adult,,fish,fish,Hitch
+938,JACKSM,Jacksmelt,Chordata,Actinopterygii,Atheriniformes,Atherinopsidae,Atherinopsis,californiensis,adult,,fish,fish,Jacksmelt
+939,JELSPP,Jellyfish Unid,Cnidaria,,,,,,adult,,fish,fish,Jellyfish Unid
+940,LAMSPP,Lamprey spp.,Chordata,Hyperoartia,Petromyzontiformes,Petromyzontidae,Lampetra,,adult,,fish,fish,Lamprey spp.
+941,LARBAS,Largemouth Bass,Chordata,Actinopterygii,Perciformes,Centrarchidae,Micropterus,salmoides,adult,,fish,fish,Largemouth Bass
+942,LONSME,Longfin Smelt,Chordata,Actinopterygii,Osmeriformes,Osmeridae,Spirinchus,thaleichthys,adult,,fish,fish,Longfin Smelt
+943,MAEOTI,Maeotias,Cnidaria,Hydrozoa,Limnomedusae,Olindiidae,Maeotias,,adult,,fish,fish,Maeotias
+946,MOOJEL,Moon Jellyfish,Cnidaria,Scyphozoa,Semaeostomeae,Ulmaridae,Aurelia,,adult,,fish,fish,Moon Jellyfish
+949,NORANC,Northern Anchovy,Chordata,Actinopterygii,Clupeiformes,Engraulidae,Engraulis,Mordax,adult,,fish,fish,Northern Anchovy
+950,SMESPP,Osmeridae spp.,Chordata,Actinopterygii,Osmeriformes,Osmeridae,unknown,unknown,adult,,fish,fish,Osmeridae spp.
+951,PACHER,Pacific Herring,Chordata,Actinopterygii,Clupeiformes,Clupeidae,Clupea,pallasi,adult,,fish,fish,Pacific Herring
+952,PACLAM,Pacific Lamprey,Chordata,Actinopterygii,Petromyzontiformes,Petromyzontidae,Lampetra,tridentata,adult,,fish,fish,Pacific Lamprey
+953,PACSSC,Pacific Staghorn Sculpin,Chordata,Actinopterygii,Scorpaeniformes,Cottidae,Leptocottus,armatus,adult,,fish,fish,Pacific Staghorn Sculpin
+955,PLAMID,Plainfin Midshipman,Chordata,Actinopterygii,Batrachoidiformes,Batrachoididae,Porichthys,notatus,adult,,fish,fish,Plainfin Midshipman
+956,Polyor,Polyorchis,Cnidaria,Hydrozoa,Anthoathecata,Corynidae,Polyorchis,,adult,,fish,fish,Polyorchis
+958,PUMPKI,Pumpkinseed,Chordata,Actinopterygii,Perciformes,Centrarchidae,Lepomis,gibbosus,adult,,fish,fish,Pumpkinseed
+960,REDSHI,Red Shiner,Chordata,Actinopterygii,Cypriniformes,Cyprinidae,Cyprinella,lutrensis,adult,,fish,fish,Red Shiner
+961,REDEAR,Redear,Chordata,Actinopterygii,Perciformes,Centrarchidae,Lepomis,microlophus,adult,,fish,fish,Redear
+962,REDBAS,Redeye Bass,Chordata,Actinopterygii,Perciformes,Centrarchidae,Micropterus,coosae,adult,,fish,fish,Redeye Bass
+963,RIFSCU,Riffle Sculpin,Chordata,Actinopterygii,Scorpaeniformes,Cottidae,Cottus,gulosus,adult,,fish,fish,Riffle Sculpin
+964,RIVLAM,River Lamprey,Chordata,Hyperoartia,Petromyzontiformes,Petromyzontidae,Lampetra,,adult,,fish,fish,River Lamprey
+965,SACBLA,Sacramento Blackfish,Chordata,Actinopterygii,Cypriniformes,Cyprinidae,Orthodon,microlepidotus,adult,,fish,fish,Sacramento Blackfish
+966,SACPER,Sacramento Perch,Chordata,Actinopterygii,Perciformes,Centrarchidae,Archoplites,interruptus,adult,,fish,fish,Sacramento Perch
+967,SACPIK,Sacramento Pikeminnow,Chordata,Actinopterygii,Cypriniformes,Cyprinidae,Ptychocheilus,grandis,adult,,fish,fish,Sacramento Pikeminnow
+969,SCRIPPS,Scrippsia,Cnidaria,Hyrozoa,Anthoathecata,Corynidae,Scrippsia,,adult,,fish,fish,Scrippsia
+970,SHIGOB,Shimofuri Goby,Chordata,Actinopterygii,Gobiiformes,Oxudercidae,Tridentiger,bifasciatus,adult,,fish,fish,Shimofuri Goby
+971,SHOGOB,Shokihaze Goby,Chordata,Actinopterygii,Gobiiformes,Oxudercidae,Tridentiger,,adult,,fish,fish,Shokihaze Goby
+972,SMABAS,Smallmouth Bass,Chordata,Actinopterygii,Perciformes,Centrarchidae,Micropterus,dolomieui,adult,,fish,fish,Smallmouth Bass
+973,SPEDAC,Speckled Dace,Chordata,Actinopterygii,Cypriniformes,Cyprinidae,Rhinichthys,,adult,,fish,fish,Speckled Dace
+974,SPLITT,Splittail,Chordata,Actinopterygii,Cypriniformes,Cyprinidae,Pogonichthys,macrolepidotus,adult,,fish,fish,Splittail
+975,SPOBAS,Spotted Bass,Chordata,Actinopterygii,Perciformes,Centrarchidae,Micropterus,punctulatus,adult,,fish,fish,Spotted Bass
+976,STAFLO,Starry Flounder,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Platichthys,stellatus,adult,,fish,fish,Starry Flounder
+977,STEELH,Steelhead,Chordata,Actinopterygii,Salmoniformes,Salmonidae,Oncorhynchus,mykiss,adult,,fish,fish,Steelhead
+979,SUNFIS,Sunfish (unknown species),Chordata,Actinopterygii,Perciformes,Centrarchidae,,,adult,,fish,fish,Sunfish (unknown species)
+980,SURSME,Surf Smelt,Chordata,Actinopterygii,Osmeriformes,Osmeridae,Hypomesus,pretiosus,adult,,fish,fish,Surf Smelt
+981,THRSHA,Threadfin Shad,Chordata,Actinopterygii,Clupeiformes,Clupeidae,Dorosoma,petenense,adult,,fish,fish,Threadfin Shad
+982,THRSTI,Threespine Stickleback,Chordata,Actinopterygii,Gasterosteiformes,Gasterosteidae,Gasterosteus,aculeatus,adult,,fish,fish,Threespine Stickleback
+983,TOPSME,Topsmelt,Chordata,Actinopterygii,Atheriniformes,Atherinopsidae,Atherinopsidae,affinis,adult,,fish,fish,Topsmelt
+984,TRISPP,Tridentiger Spp.,Chordata,Actinopterygii,Gobiiformes,Oxudercidae,Tridentiger,,adult,,fish,fish,Tridentiger Spp.
+985,TULPER,Tule Perch,Chordata,Actinopterygii,,Embiotocidae,Hysterocarpus,traski,adult,,fish,fish,Tule Perch
+987,WAKASA,Wakasagi,Chordata,Actinopterygii,Osmeriformes,Osmeridae,Hypomesus,traski,adult,,fish,fish,Wakasagi
+988,WARMOU,Warmouth,Chordata,Actinopterygii,Perciformes,Centrarchidae,Lepomis,gluosus,adult,,fish,fish,Warmouth
+989,WHICAT,White Catfish,Chordata,Actinopterygii,Siluriformes,Ictaluridae,Ameiurus,catus,adult,,fish,fish,White Catfish
+990,WHICRA,White Crappie,Chordata,Actinopterygii,Perciformes,Centrarchidae,Pomoxis,annularis,adult,,fish,fish,White Crappie
+991,WHICRO,White Croaker,Chordata,Actinopterygii,Perciformes,Sciaenidae,Sciaenidae,lineatus,adult,,fish,fish,White Croaker
+992,WHISTU,White Sturgeon,Chordata,Actinopterygii,Acipenseriformes,Acipenseridae,Acipenser,transmontanus,adult,,fish,fish,White Sturgeon
+993,YELBUL,Yellow Bullhead,Chordata,Actinopterygii,Siluriformes,Ictaluridae,Ameiurus,natalis,adult,,fish,fish,Yellow Bullhead
+994,YELGOB,Yellowfin Goby,Chordata,Actinopterygii,Gobiiformes,Oxudercidae,Acanthogobius,flavimanus,adult,,fish,fish,Yellowfin Goby
+113,,Hydrophilidae Larvae Beetle,Arthropoda,Insecta,Coleoptera,Hydrophilide,,,larvae,TRUE,Coleoptera,Insecta,Hydrophilidae
+157,,Hydrophilidae Adult Beetle,Arthropoda,Insecta,Coleoptera,Hydrophilidae,,,adult,TRUE,Coleoptera,Insecta,Hydrophilidae
+160,,Coleoptera Other adult,Arthropoda,Insecta,Coleoptera,,,,adult,TRUE,Coleoptera,Insecta,Coleoptera
+167,,Coleoptera Larvae,Arthropoda,Insecta,Coleoptera,,,,larvae,TRUE,Coleoptera,Insecta,Coleoptera
+174,,Dytiscidae larvae,Arthropoda,Insecta,Coleoptera,Dytiscidae,,,larvae,TRUE,Coleoptera,Insecta,Dytiscidae
+183,,Staphylinidae adult,Arthropoda,Insecta,Coleoptera,Staphylinidae,,,adult,TRUE,Coleoptera,Insecta,Staphylinidae
+188,,Curculionidae,Arthropoda,Insecta,Coleoptera,Curculionidae,,,adult,FALSE,Coleoptera,Insecta,Curculionidae
+201,,Noteridae adult,Arthropoda,Insecta,Coleoptera,Noteridae,,,adult,TRUE,Coleoptera,Insecta,Noteridae
+202,,Dytiscidae adult,Arthropoda,Insecta,Coleoptera,Dytiscidae,,,adult,TRUE,Coleoptera,Insecta,Dytiscidae
+203,,Elmidae adult,Arthropoda,Insecta,Coleoptera,Elmidae,,,adult,TRUE,Coleoptera,Insecta,Elmidae
+213,,Elmidae larvae,Arthropoda,Insecta,Coleoptera,Elmidae,,,adult,FALSE,Coleoptera,Insecta,Elmidae
+215,,Gyrinidae larvae,Arthropoda,Insecta,Coleoptera,Gyrinidae,,,larvae,FALSE,Coleoptera,Insecta,Gyrinidae
+230,,Curculionidae Larvae,Arthropoda,Insecta,Coleoptera,Curculionidae,,,larvae,FALSE,Coleoptera,Insecta,Curculionidae
+233,,Chrysomelidae Adult,Arthropoda,Insecta,Coleoptera,Chrysomelidae,,,adult,FALSE,Coleoptera,Insecta,Chrysomelidae
+234,,Scolytinae Adult,Arthropoda,Insecta,Coleoptera,Curculionidae,Scolytus,,adult,FALSE,Coleoptera,Insecta,Coleoptera
+235,,Haliplidae Larvae,Arthropoda,Insecta,Coleoptera,Haliplidae,,,larvae,FALSE,Coleoptera,Insecta,Haliplidae
+239,,Carabidae Larvae,Arthropoda,Insecta,Coleoptera,Carabidae,,,larvae,FALSE,Coleoptera,Insecta,Carabidae
+10002,,Hydraenidae adult,Arthropoda,Insecta,Coleoptera,Hydraenidea,,,adult,FALSE,Coleoptera,Insecta,Hydraenidae
+10006,,Coccinellidae Adult,Arthropoda,Insecta,Coleoptera,Coccinellidae,,,adult,FALSE,Coleoptera,Insecta,Coccinellidae
+10007,,Ptilidae adult,Arthropoda,Insecta,Coleoptera,Ptilidae,,,adult,FALSE,Coleoptera,Insecta,Ptilidae
+3,,Chironomid Larvae,Arthropoda,Insecta,Diptera,Chironomidae,,,larvae,TRUE,Diptera,Insecta,Chironomid
+115,,Ephydridae Larvae,Arthropoda,Insecta,Diptera,Ephydridae,,,larvae,TRUE,Diptera,Insecta,Ephydridae
+116,,Diptera Adult,Arthropoda,Insecta,Diptera,,,,adult,TRUE,Diptera,Insecta,Diptera adult
+155,,Brachycera Larvae,Arthropoda,Insecta,Diptera,,,,larvae,TRUE,Diptera,Insecta,Diptera Other
+158,,Diptera Larvae Other,Arthropoda,Insecta,Diptera,,,,larvae,TRUE,Diptera,Insecta,Diptera Other
+165,,Ceratopogonidae larvae,Arthropoda,Insecta,Diptera,Ceratopogonidae,,,larvae,TRUE,Diptera,Insecta,Ceratopogonidae
+173,,Diptera Pupae,Arthropoda,Insecta,Diptera,,,,pupae,TRUE,Diptera,Insecta,Diptera Other
+179,,Brachycera Pupae,Arthropoda,Insecta,Diptera,,,,pupae,TRUE,Diptera,Insecta,Diptera Other
+187,,Psychodidae larvae,Arthropoda,Insecta,Diptera,Psychodidae,,,larvae,TRUE,Diptera,Insecta,Psychodidae
+192,,Tabanidae,Arthropoda,Insecta,Diptera,Tabanidae,,,larvae,TRUE,Diptera,Insecta,Tabanidae
+194,,Nematocera pupae,Arthropoda,Insecta,Diptera,,,,pupae,TRUE,Diptera,Insecta,Diptera Other
+208,,Dolichopodidae larvae,Arthropoda,Insecta,Diptera,Dolichopodidae,,,larvae,FALSE,Diptera,Insecta,Dolichopodidae
+210,,Tipulidae larvae,Arthropoda,Insecta,Diptera,Tipulidae,,,larvae,FALSE,Diptera,Insecta,Tipulidae
+211,,Tipulidae adult,Arthropoda,Insecta,Diptera,Tipulidae,,,adult,FALSE,Diptera,Insecta,Tipulidae
+229,,Sciomyzidae Larvae,Arthropoda,Insecta,Diptera,Sciomyzidae,,,larvae,FALSE,Diptera,Insecta,Sciomyzidae
+232,,Culicidae Larvae,Arthropoda,Insecta,Diptera,Culicidae,,,larvae,FALSE,Diptera,Insecta,Culicidae
+10010,,Simuliidae,Arthropoda,Insecta,Diptera,Simuliidae,,,adult,FALSE,Diptera,Insecta,Simuliidae
+10011,,Simuliidae larvae,Arthropoda,Insecta,Diptera,Simuliidae,,,larvae,FALSE,Diptera,Insecta,Simuliidae
+10020,,Hydroscaphidae Adult,Arthropoda,Insecta,Coleoptera,Hydroscaphidae,,,adult,FALSE,Diptera,Insecta,Hydroscaphidae
+117,,Baetidae,Arthropoda,Insecta,Ephemeroptera,Baetidae,,,larvae,TRUE,Ephemeroptera,Insecta,Baetidae
+118,,Caenidae,Arthropoda,Insecta,Ephemeroptera,Caenidae,,,larvae,TRUE,Ephemeroptera,Insecta,Caenidae
+119,,Ephemeroptera larvae Other,Arthropoda,Insecta,Ephemeroptera,,,,larvae,TRUE,Ephemeroptera,Insecta,Ephemeroptera Other
+168,,Ephemeroptera larvae UNID,Arthropoda,Insecta,Ephemeroptera,,,,larvae,FALSE,Ephemeroptera,Insecta,Ephemeroptera Other
+205,,Tricorythidae larvae,Arthropoda,Insecta,Ephemeroptera,Tricorythidae,,,larvae,TRUE,Ephemeroptera,Insecta,Ephemeroptera Other
+206,,Leptohyphidae mayfly larvae,Arthropoda,Insecta,Ephemeroptera,Leptohyphidae,Tricorythodes,minutus,larvae,TRUE,Ephemeroptera,Insecta,Ephemeroptera Other
+242,,Ephemeroptera Adult,Arthropoda,Insecta,Ephemeroptera,,,,adult,FALSE,Ephemeroptera,Insecta,Ephemeroptera Other
+10019,,Muscidae,Arthropoda,Insecta,Diptera,Muscidae,,,larvae,FALSE,Diptera,Insecta,Muscidae
+900,,Haliplidae adult,Arthropoda,Insecta,Coleoptera,Haliplidae,,,adult,,Coleoptera,Insecta,Haliplidae
+120,,Aphididae,Arthropoda,Insecta,Hemiptera,Aphididae,,,,TRUE,Hemiptera,Insecta,Aphid
+121,,Belostomatidae,Arthropoda,Insecta,Hemiptera,Belostomatidae,,,adult,FALSE,Hemiptera,Insecta,Belostomatidae
+122,,Corixidae,Arthropoda,Insecta,Hemiptera,Corixidae,,,adult,TRUE,Hemiptera,Insecta,Corixidae
+123,,Gerridae,Arthropoda,Insecta,Hemiptera,Gerridae,,,adult,TRUE,Hemiptera,Insecta,Gerridae
+124,,Hydrometridae,Arthropoda,Insecta,Hemiptera,Hydrometridae,,,adult,TRUE,Hemiptera,Insecta,Hydrometridae
+125,,Mesoveliidae,Arthropoda,Insecta,Hemiptera,Mesoveliidae,,,adult,TRUE,Hemiptera,Insecta,Mesoveliidae
+126,,Vellidae,Arthropoda,Insecta,Hemiptera,Vellidae,,,adult,TRUE,Hemiptera,Insecta,Vellidae
+127,,Hemiptera Other,Arthropoda,Insecta,Hemiptera,,,,adult,TRUE,Hemiptera,Insecta,Hemiptera Other
+159,,Aphididae Larvae,Arthropoda,Insecta,Hemiptera,Aphididae,,,adult,TRUE,Hemiptera,Insecta,Aphid
+161,,Aphididae Adult,Arthropoda,Insecta,Hemiptera,Aphididae,,,adult,TRUE,Hemiptera,Insecta,Aphid
+237,,Psyllidae,Arthropoda,Insecta,Hemiptera,Psyllidae,,,adult,FALSE,Hemiptera,Insecta,Psyllidae
+240,,Hebridae,Arthropoda,Insecta,Hemiptera,Hebridae,,,adult,FALSE,Hemiptera,Insecta,Hebridae
+244,,Nepidae,Arthropoda,Insecta,Hemiptera,Nepidae,,,adult,FALSE,Hemiptera,Insecta,Nepidae
+10009,,Homoptera,Arthropoda,Insecta,Hemiptera,,,,adult,FALSE,Hemiptera,Insecta,Homoptera
+10016,,Leafhopper juvenile,arthropoda,insecta,Hemiptera,,,,adult,FALSE,Hemiptera,Insecta,Hemiptera Other
+10017,,Talitridae,Arthropoda,Malacostraca,Amphipoda,Talitridae,,,adult,FALSE,Hemiptera,Insecta,Talitridae
+103,,Ant,Arhtropoda,Insecta,Hymenoptera,Formicidae,,,adult,TRUE,Hymenoptera,Insecta,Ant
+128,,Hymenoptera Other,Arthropoda,Insecta,Hymenoptera,,,,adult,TRUE,Hymenoptera,Insecta,Hymenoptera Other
+163,,Lepidoptera Larvae,Arthropoda,Insecta,Lepidoptera,,,,larvae,TRUE,Lepidoptera,Insecta,Other
+10014,,Leafhopper adult,Arthropoda,Insecta,Hemiptera,Cicadellidae,,,adult,FALSE,Lepidoptera,Insecta,Other
+223,,Sisyridae Larvae,Arthropoda,Insecta,Neuroptera,Sisyridae,,,larvae,FALSE,Neuroptera,Insecta,Neuroptera
+209,,Gomphidae larvae,Arthropoda,Insecta,Odanata,Gompidae,,,larvae,FALSE,Odanata,Insecta,Gomphidae larvae
+228,,Zygoptera Adult,Arthropoda,Insecta,Odanata,,,,adult,FALSE,Odanata,Insecta,Zygoptera Adult
+129,,Aeshnidae larvae,Arthropoda,Insecta,Odonata,Aeshnidae,,,larvae,FALSE,Odonata,Insecta,Aeshnidae larvae
+130,,Coenagrionidae larvae,Arthropoda,Insecta,Odonata,Coenagrionidae,,,larvae,FALSE,Odonata,Insecta,Coenagrionidae larvae
+131,,Odonata Other,Arthropoda,Insecta,Odonata,,,,larvae,FALSE,Odonata,Insecta,Odonata Other
+181,,Libellulidae,Arthropoda,Insecta,Odonata,Libellulidae,,,larvae,FALSE,Odonata,Insecta,Libellulidae
+191,,Orthoptera,Arthropoda,Insecta,Orthoptera,,,,adult,TRUE,Orthoptera,Insecta,Orthoptera
+4,,Insect larvae Other,Arthropoda,Insecta,,,,,larvae,TRUE,other,Insecta,Insect larvae Other
+135,,Insect Unid,Arthropoda,Insecta,,,,,adult,TRUE,other,Insecta,Insect Unid
+219,,Psocoptera Adult,Arthropoda,Insecta,Psocoptera,,,,adult,FALSE,Psocoptera,Insecta,Psocoptera
+243,,Psocoptera Larvae,Arthropoda,Insecta,Psocoptera,,,,larvae,FALSE,Psocoptera,Insecta,Psocoptera
+182,,Tanaid,Arthropoda,Malacostraca,Tanaidacea,,,,adult,TRUE,Tanaidacea,Insecta,Tanaid
+132,,Thrips,Arthropoda,Insecta,Thysanoptera,,,,adult,TRUE,Thysanoptera,Insecta,Thrips
+133,,Hydroptilidae Larvae Caddisfly,Arthropoda,Insecta,Trichoptera,Hydroptilidae,,,larvae,TRUE,Trichoptera,Insecta,Hydroptilidae
+134,,Tricoptera larvae Other,Arthropoda,Insecta,Trichoptera,,,,larvae,TRUE,Trichoptera,Insecta,Trichoptera Other
+190,,Hydroptilidae Adult Caddisfly,Arthropoda,Insecta,Trichoptera,Hydroptilidae,,,adult,TRUE,Trichoptera,Insecta,Hydroptilidae
+198,,Polycentripodidae larvae,Arthropoda,Insecta,Trichoptera,Polycentripodidae,,,larvae,TRUE,Trichoptera,Insecta,Polycentripodidae larvae
+236,,Trichoptera Adult,Arthropoda,Insecta,Trichoptera,,,,adult,FALSE,Trichoptera,Insecta,Trichoptera Other
+10021,,Psyllidae Larvae,Arthropoda,Insecta,Hemiptera,Psyllidae,,,larvae,FALSE,Hemiptera,Insecta,Psyllidae Larvae
+10022,,Tenebrionidae adult,Arthropoda,Insecta,Coleoptera,Tenebrionidae,,,adult,FALSE,Coleoptera,Insecta,Tenebrionidae adult
+10024,,Coccinellidae Larvae,Arthropoda,Insecta,Coleoptera,Coccinellidae,,,larvae,FALSE,Coleoptera,Insecta,Coccinellidae Larvae
+10025,,Scirtidae adult,Arthropoda,Insecta,Coleoptera,Scirtidae,,,adult,FALSE,Coleoptera,Insecta,Scirtidae adult
+10026,,Stratiomyidae,Arthropoda,Insecta,Diptera,Stratiomyidae,,,larvae,FALSE,Diptera,Insecta,Stratiomyidae
+10028,,Lepidoptera pupae,Arthropoda,Insecta,Lepidoptera,,,,pupae,FALSE,Lepidoptera,Insecta,Other
+10029,,Hydroptilidae Pupae Caddisfly,Arthropoda,Insecta,Trichoptera,Hydroptilidae,,,pupae,FALSE,Trichoptera,Insecta,Hydroptilidae
+11000,,Notonectidae,Arthropoda,Insecta,Hemiptera,Notonectidae,,,adult,FALSE,Hemiptera,Insecta,Notonectidae
+73,,Isopods,Arthropoda,Malacostraca,Isopoda,,,,adult,TRUE,Isopoda,Isopoda,Isopod Other
+178,,Gnorimosphaeroma,Arthropoda,Malacostraca,Isopoda,Sphaeromatidae,Gnorimosphaeroma,insulare,adult,FALSE,Isopoda,Isopoda,Gnorimosphaeroma
+184,,Asellus,Arthropoda,Malacostraca,Isopoda,Asellidae,Asellus,hilgendorfii,adult,TRUE,Isopoda,Isopoda,Asellus
+315,,Ligidium,Arthropoda,Malacostraca,Isopoda,Ligiidae,Ligidium,lates,adult,TRUE,Isopoda,Isopoda,Ligidium
+10001,,Caecidotea,Arthropoda,Malacostraca,Isopoda,Asellidae,Caecidotea,,adult,FALSE,Isopoda,Isopoda,Caecidotea
+10004,,Munnidae,Arthropoda,Malacostraca,Isopoda,Munnidae,NA,NA,adult,FALSE,Isopoda,Isopoda,Munnidae
+10005,,Isopod other,Arthropoda,Malacostraca,Isopoda,NA,NA,NA,adult,FALSE,Isopoda,Isopoda,Isopod other
+10008,,Isopod juvenile,Arthropoda,Malacostraca,Isopoda,,,,juvenile,FALSE,Isopoda,Isopoda,Isopod Other
+204,,Pisidium,Mollusca,Bivalva,,,Pisidium,casertanum,adult,TRUE,Bivalva,Mollusca,Clam Other
+8,,Corbicula,Mollusca,Bivalvia,Veneroida,Corbiculidae,Corbicula,fluminea,adult,FALSE,Bivalvia,Mollusca,Corbicula
+139,,Potamocorbula,Mollusca,Bivalvia,Myoida,Corbulidae,Potamocorbula,amurensis,adult,FALSE,Bivalvia,Mollusca,Potamocorbula
+141,,Clam Other,Mollusca,Bivalvia,,,,,adult,FALSE,Bivalvia,Mollusca,Clam Other
+245,,Musculium,Mollusca,Bivalvia,Veneroida,Sphaeriidae,Musculium,,adult,FALSE,Bivalvia,Mollusca,Clam Other
+10003,,Clam Juvenile,Mollusca,Bivalvia,Unknown,Unknown,Unknown,Unknown,juvenile,FALSE,Bivalvia,Mollusca,Clam Other
+10018,,Hydrobiidae,Mollusca,Gastropoda,Littorinimorpha,Hydrobiidae,,,adult,FALSE,Gastropoda,Mollusca,Hydrobiidae
+142,,Fluminicola,Mollusca,Gastopoda,,Lythoglyphidae,Fluminicola,,adult,FALSE,Gastropoda,Mollusca,Fluminicola
+143,,Gyraulus,Mollusca,Gastropoda,,Planorbidae,Gyraulus,,adult,FALSE,Gastropoda,Mollusca,Gyraulus
+144,,Melanoides tuberculata,Mollusca,Gastropoda,,Thiaridae,Melanoides,tuberculata,adult,FALSE,Gastropoda,Mollusca,Melanoides tuberculata
+154,,Snail Other,Mollusca,Gastropoda,,,,,adult,FALSE,Gastropoda,Mollusca,Snail Other
+166,,Snail Eggs,Mollusca,Gastropoda,,,,,egg,FALSE,Gastropoda,Mollusca,Snail Other
+169,,Physa,Mollusca,Gastropoda,,Physidae,Physa,,adult,FALSE,Gastropoda,Mollusca,Physa
+170,,Planorbella,Mollusca,Gastropoda,,Planorbidae,Planorbella,,adult,FALSE,Gastropoda,Mollusca,Planorbella
+172,,Planorbidae other/UNID,Mollusca,Gastropoda,,Planorbidae,,,adult,FALSE,Gastropoda,Mollusca,Snail Other
+185,,Fossaria,Mollusca,Gastropoda,Basommatophora,Lymnaeidae,Fossaria,,adult,FALSE,Gastropoda,Mollusca,Fossaria
+189,,Lymnaea,Mollusca,Gastropoda,Basommatophora,Lymnaeidae,Lymnaea,,adult,FALSE,Gastropoda,Mollusca,Lymnaea
+200,,limpet,Mollusca,Gastropoda,Limnophila,Ancylus,Ferrissia,californica,adult,FALSE,Gastropoda,Mollusca,limpet
+214,,Slug,Mollusca,Gastropoda,,,,,adult,FALSE,Gastropoda,Mollusca,Snail Other
+260,,Nudibranch,Mollusca,Gastropoda,Nudibranchia,,,,adult,FALSE,Gastropoda,Mollusca,Other
+17,,Deltamysis homquistae,Arthropoda,Malacostraca,Mysidacea,,Deltamysis,homquistae,adult,TRUE,Mysidacea,Mysidacea,Deltamysis homquistae
+18,,Neomysis kadiakensis,Arthropoda,Malacostraca,Mysidacea,,Neomysis,kadiakensis,adult,TRUE,Mysidacea,Mysidacea,Neomysis kadiakensis
+19,,Neomysis mercedis,Arthropoda,Malacostraca,Mysidacea,,Neomysis,mercedis,adult,TRUE,Mysidacea,Mysidacea,Neomysis mercedis
+71,,Mysid Other,Arthropoda,Malacostraca,Mysidacea,,,,adult,TRUE,Mysidacea,Mysidacea,Mysid Other
+13,,Acanthomysis aspera,Arthropoda,Malacostraca,Mysidacea,,Acanthomysis,aspera,adult,TRUE,Mysidacea,Mysidacea,Acanthomysis aspera
+14,,Acanthomysis bowmani,Arthropoda,Malacostraca,Mysidacea,,Acanthomysis,bowmani,adult,TRUE,Mysidacea,Mysidacea,Acanthomysis bowmani
+15,,Acanthomysis hwanhaiensis,Arthropoda,Malacostraca,Mysidacea,,Acanthomysis,hwanhaiensis,adult,TRUE,Mysidacea,Mysidacea,Acanthomysis hwanhaiensis
+16,,Acanthomysis macropsis,Arthropoda,Malacostraca,Mysidacea,,Acanthomysis,macropsis,adult,TRUE,Mysidacea,Mysidacea,Acanthomysis macropsis
+225,,Mysid juvenile,Arthropoda,Malacostraca,Mysidacea,Mysidae,,,larvae,FALSE,Mysidacea,Mysidacea,Mysid juvenile
+226,,Hyperacanthomysis longirostris,Arthropoda,Malacostraca,Mysidacea,Mysidae,Hyperacanthomysis,longirostris,adult,FALSE,Mysidacea,Mysidacea,Hyperacanthomysis longirostris
+145,,Nematode,Nematoda,,,,,,adult,FALSE,Nematoda,Nematoda,Nematode
+146,,Prostoma,Nemertea,Enopla,Monostilifera,Tetrastemmatidae,Prostoma,,adult,FALSE,Nemertea,Nemertea,Nemertea
+241,,Nemertea,Nemertea,,,,,,adult,FALSE,Nemertea,Nemertea,Nemertea
+10,,Ostracods,Arthropoda,Ostacoda,,,,,adult,FALSE,Ostracoda,Ostracoda,Ostracods
+79,,Malcostraca Other,Arthropoda,Malacostraca,,,,,adult,TRUE,other,other,Malcostraca Other
+10012,,Magnificent Bryozoan,Bryozoa,Phylactolaemata,Plumatellida,Pectinatellidae,Pectinatella,Pectinatella magnifica,adult,FALSE,Bryozoa,other,Other
+138,,Cnidaria Other,Cnidaria,,,,,,,FALSE,Cnidaria,other,Other
+901,AEQSPP,Aequorea spp.,Cnidaria,Hydrozoa,Leptothecata,Aequoreidae,Aequorea,unknown,adult,,Hydrozoa,Other,Other
+95,,Stomach/Gut Tissue,,,,,,,,FALSE,other,other,Stomach/Gut Tissue
+96,,Debris (sand/silt/mud),,,,,,,,FALSE,other,other,Debris (sand/silt/mud)
+97,,Plant material UNID,,,,,,,,FALSE,other,other,Plant material UNID
+98,,Animal material UNID,,,,,,,,FALSE,other,other,Animal material UNID
+99,,Zooplankton Other,,,,,,,adult,FALSE,other,other,Zooplankton Other
+148,,Eggs UNID,,,,,,,egg,FALSE,other,other,Eggs UNID
+162,,Egg Sacs,,,,,,,egg,FALSE,other,other,Egg Sacs
+196,,Tardigrade,Tardigrades,,,,,,adult,FALSE,other,other,Tardigrade
+222,,Invertebrate UNID,,,,,,,adult,FALSE,other,other,Invertebrate UNID
+800,TADPOL,Bullfrog tadpole,Chordata,,,,,,larvae,,tadpole,other,Other
+400,,Achnanthidium sp.,Bacillariophyta,,Cocconeidales,Achnanthidiaceae,Achnanthidium,,,,phytoplankton,phytoplankton,
+401,,Actinastrum hantzschii,Chlorophyta,,Chlorellales,Chlorellaceae,Actinastrum,hantzschii,,,phytoplankton,phytoplankton,
+402,,Amphora sp.,Bacillariophyta,,Thalassiophysales,Catenulaceae,Amphora,,,,phytoplankton,phytoplankton,
+403,,Anabaena sp.,Cyanobacteria,,Nostocales,Nostocaceae,Anabaena,,,,phytoplankton,phytoplankton,
+404,,Ankistrodesmus sp.,Chlorophyta,,Sphaeropleales,Selenastraceae,Ankistrodesmus,,,,phytoplankton,phytoplankton,
+405,,Aphanocapsa sp.,Cyanobacteria,,Synechococcales,Merismopediaceae,Aphanocapsa,,,,phytoplankton,phytoplankton,
+406,,Arthrospira sp.,Cyanobacteria,,Oscillatoriales,Microcoleaceae,Arthrospira,,,,phytoplankton,phytoplankton,
+407,,Asterionella formosa,Bacillariophyta,,Tabellariales,Tabellariaceae,Asterionella,formosa,,,phytoplankton,phytoplankton,
+408,,Aulacoseira sp.,Bacillariophyta,,Aulacoseirales,Aulacoseiraceae,Aulacoseira,,,,phytoplankton,phytoplankton,
+409,,Bacillaria paradoxa,Bacillariophyta,,Bacillariales,Bacillariaceae,Bacillaria,paradoxa,,,phytoplankton,phytoplankton,
+410,,Bacillaria sp.,Bacillariophyta,,Bacillariales,Bacillariaceae,Bacillaria,,,,phytoplankton,phytoplankton,
+411,,Biddulphia sp.,Bacillariophyta,,Biddulphiales,Biddulphiaceae,Biddulphia,,,,phytoplankton,phytoplankton,
+412,,Bitrichia chodatii,Ochrophyta,,Hibberdiales,Stylococcaceae,Bitrichia,chodatii,,,phytoplankton,phytoplankton,
+413,,Borzia sp.,Cyanobacteria,,Oscillatoriales,Borziaceae,Borzia,,,,phytoplankton,phytoplankton,
+414,,Brachysira sp.,Bacillariophyta,,Naviculales,Brachysiraceae,Brachysira,,,,phytoplankton,phytoplankton,
+415,,Calothrix sp.,Cyanobacteria,,Nostocales,Rivulariaceae,Calothrix,,,,phytoplankton,phytoplankton,
+416,,Carteria sp.,Chlorophyta,,Chlamydomonadales,Chlamydomonadaceae,Carteria,,,,phytoplankton,phytoplankton,
+417,,Chaetoceros sp.,Bacillariophyta,,Chaetocerotales,Chaetocerotaceae,Chaetoceros,,,,phytoplankton,phytoplankton,
+418,,Chlamydomonas grovei,Chlorophyta,,Chlamydomonadales,Chlamydomonadaceae,Chlamydomonas,grovei,,,phytoplankton,phytoplankton,
+419,,Chlorella ellipsoidea,Chlorophyta,,Chlorellales,Chlorellaceae,Chlorella,ellipsoidea,,,phytoplankton,phytoplankton,
+420,,Chroococcus sp.,Cyanobacteria,,Chroococcales,Chroococcaceae,Chroococcus,,,,phytoplankton,phytoplankton,
+421,,Chroomonas sp.,Cryptophyta,,Pyrenomonadales,Chroomonadaceae,Chroomonas,,,,phytoplankton,phytoplankton,
+422,,Chrysochromulina sp.,Haptophyta,,Prymnesiales,Chrysochromulinaceae,Chrysochromulina,,,,phytoplankton,phytoplankton,
+423,,Chrysococcus sp.,Ochrophyta,,Chromulinales,Dinobryaceae,Chrysococcus,,,,phytoplankton,phytoplankton,
+424,,Cladophora glomerata,Chlorophyta,,Cladophorales,Cladophoraceae,Cladophora,glomerata,,,phytoplankton,phytoplankton,
+425,,Closterium sp.,Charophyta,,Desmidiales,Closteriaceae,Closterium,,,,phytoplankton,phytoplankton,
+426,,Cocconeis sp.,Bacillariophyta,,Cocconeidales,Cocconeidaceae,Cocconeis,,,,phytoplankton,phytoplankton,
+427,,Coelastrum sp.,Chlorophyta,,Scenedesmaceae,Coelastroideae,Coelastrum,,,,phytoplankton,phytoplankton,
+428,,Crucigenia sp.,Chlorophyta,,Trebouxiophyceae ordo incertae sedi,Trebouxiophyceae incertae sedis,Crucigenia,,,,phytoplankton,phytoplankton,
+429,,Crucigenia tetrapedia,Chlorophyta,,Trebouxiophyceae ordo incertae sedi,Trebouxiophyceae incertae sedis,Crucigenia,tetrapedia,,,phytoplankton,phytoplankton,
+430,,Crucigeniella rectangularis,Chlorophyta,,Chlorellales,Oocystaceae,Crucigeniella,rectangularis,,,phytoplankton,phytoplankton,
+431,,Crucigeniella sp.,Chlorophyta,,Chlorellales,Oocystaceae,Crucigeniella,,,,phytoplankton,phytoplankton,
+432,,Cryptomonas sp.,Cryptophyta,,Cryptomonadales,Cryptomonadaceae,Cryptomonas,,,,phytoplankton,phytoplankton,
+433,,Cyclotella atomus,Bacillariophyta,,Stephanodiscales,Stephanodiscaceae,Cyclotella,atomus,,,phytoplankton,phytoplankton,
+434,,Cyclotella meneghiniana,Bacillariophyta,,Stephanodiscales,Stephanodiscaceae,Cyclotella,meneghiniana,,,phytoplankton,phytoplankton,
+435,,Cyclotella sp.,Bacillariophyta,,Stephanodiscales,Stephanodiscaceae,Cyclotella,,,,phytoplankton,phytoplankton,
+436,,Cylindrotheca sp.,Bacillariophyta,,Bacillariales,Bacillariaceae,Cylindrotheca,,,,phytoplankton,phytoplankton,
+437,,Cymbella sp.,Bacillariophyta,,Cymbellales,Cymbellaceae,Cymbella,,,,phytoplankton,phytoplankton,
+438,,Desmodesmus sp.,Chlorophyta,,Sphaeropleales,Scenedesmaceae,Desmodesmus,,,,phytoplankton,phytoplankton,
+439,,Diatoma sp.,Bacillariophyta,,Tabellariales,Tabellariaceae,Diatoma,,,,phytoplankton,phytoplankton,
+440,,Dictyosphaerium pulchellum,Chlorophyta,,Chlorellales,Chlorellaceae,Dictyosphaerium,pulchellum,,,phytoplankton,phytoplankton,
+441,,Dictyosphaerium sp.,Chlorophyta,,Chlorellales,Chlorellaceae,Dictyosphaerium,,,,phytoplankton,phytoplankton,
+442,,Didymosphenia geminata,Bacillariophyta,,Cymbellales,Cymbellaceae,Didymosphenia,geminata,,,phytoplankton,phytoplankton,
+443,,Dinobryon sp.,Ochrophyta,,Chromulinales,Dinobryaceae,Dinobryon,,,,phytoplankton,phytoplankton,
+444,,Diploneis sp.,Bacillariophyta,,Diploneidineae,Diploneidaceae,Diploneis,,,,phytoplankton,phytoplankton,
+445,,Elakatothrix acuta,Charophyta,,Klebsormidiales,Elakatotrichaceae,Elakatothrix,acuta,,,phytoplankton,phytoplankton,
+446,,Encyonema sp.,Bacillariophyta,,Cymbellales,Gomphonemataceae,Encyonema,,,,phytoplankton,phytoplankton,
+447,,Encyonopsis sp.,Bacillariophyta,,Cymbellales,Gomphonemataceae,Encyonopsis,,,,phytoplankton,phytoplankton,
+448,,Entomoneis sp.,Bacillariophyta,,Surirellales,Entomoneidaceae,Entomoneis,,,,phytoplankton,phytoplankton,
+449,,Epipyxis sp.,Ochrophyta,,Chromulinales,Dinobryaceae,Epipyxis,,,,phytoplankton,phytoplankton,
+450,,Epithemia sp.,Bacillariophyta,,Rhopalodiales,Rhopalodiaceae,Epithemia,,,,phytoplankton,phytoplankton,
+451,,Euglena sp.,Euglenophyta,,Euglenales,Euglenaceae,Euglena,,,,phytoplankton,phytoplankton,
+452,,Eunotia sp.,Bacillariophyta,,Eunotiales,Eunotiaceae,Eunotia,,,,phytoplankton,phytoplankton,
+453,,Fragilaria crotonensis,Bacillariophyta,,Fragilariales,Fragilariaceae,Fragilaria,crotonensis,,,phytoplankton,phytoplankton,
+454,,Fragilaria sp.,Bacillariophyta,,Fragilariales,Fragilariaceae,Fragilaria,,,,phytoplankton,phytoplankton,
+455,,Frustulia sp.,Bacillariophyta,,Naviculales,Amphipleuraceae,Frustulia,,,,phytoplankton,phytoplankton,
+456,,Geitlerinema sp.,Cyanobacteria,,Oscillatoriales,Coleofasciculaceae,Geitlerinema,,,,phytoplankton,phytoplankton,
+457,,Geminella sp.,Chlorophyta,,Chlorellales,Chlorellaceae,Geminella,,,,phytoplankton,phytoplankton,
+458,,Gomphonema sp.,Bacillariophyta,,Cymbellales,Gomphonemataceae,Gomphonema,,,,phytoplankton,phytoplankton,
+459,,Gyrosigma sp.,Bacillariophyta,,Naviculales,Naviculaceae,Gyrosigma,,,,phytoplankton,phytoplankton,
+460,,Hemiselmis sp.,Cryptophyta,,Pyrenomonadales,Chroomonadaceae,Hemiselmis,,,,phytoplankton,phytoplankton,
+461,,Heterocapsa sp.,Miozoa,,Peridiniales,Heterocapsaceae,Heterocapsa,,,,phytoplankton,phytoplankton,
+462,,Hippodonta sp.,Bacillariophyta,,Naviculales,Naviculaceae,Hippodonta,,,,phytoplankton,phytoplankton,
+463,,Hymenomonas sp.,Haptophyta,,Cocconeidales,Hymenomonadaceae,Hymenomonas,,,,phytoplankton,phytoplankton,
+464,,Katablepharis sp.,Katablepharidophyta,,Katablephariales,Katablepharidaceae,Katablepharis,,,,phytoplankton,phytoplankton,
+465,,Katodinium sp.,Miozoa,,Gymnodiniales,Tovelliaceae,Katodinium,,,,phytoplankton,phytoplankton,
+466,,Kirchneriella sp.,Chlorophyta,,Sphaeropleales,Selenastraceae,Kirchneriella,,,,phytoplankton,phytoplankton,
+467,,Klebsormidium sp.,Charophyta,,Klebsormidiales,Klebsormidiaceae,Klebsormidium,,,,phytoplankton,phytoplankton,
+468,,Lagerheimia chodatii,Chlorophyta,,Chlorellales,Oocystaceae,Lagerheimia,chodatii,,,phytoplankton,phytoplankton,
+469,,Lagerheimia sp.,Chlorophyta,,Chlorellales,Oocystaceae,Lagerheimia,,,,phytoplankton,phytoplankton,
+470,,Lemnicola sp.,Bacillariophyta,,Cocconeidales,Achnanthidiaceae,Lemnicola,,,,phytoplankton,phytoplankton,
+471,,Lepidodinium sp.,Miozoa,,Gymnodiniales,Geminigeraceae,Lepidodinium,,,,phytoplankton,phytoplankton,
+472,,Lepocinclis ovum,Euglenophyta,,Euglenales,Phacaceae,Lepocinclis,ovum,,,phytoplankton,phytoplankton,
+473,,Lepocinclis sp.,Euglenophyta,,Euglenales,Phacaceae,Lepocinclis,,,,phytoplankton,phytoplankton,
+474,,Leptolyngbya sp.,Cyanobacteria,,Synechococcales,Leptolyngbyaceae,Leptolyngbya,,,,phytoplankton,phytoplankton,
+475,,Leucocryptos marina,Katablepharidophyta,,Katablephariales,Katablepharidaceae,Leucocryptos,marina,,,phytoplankton,phytoplankton,
+476,,Mallomonas akrokomos,Ochrophyta,,Synurales,Mallomonadaceae,Mallomonas,akrokomos,,,phytoplankton,phytoplankton,
+477,,Mallomonas sp.,Ochrophyta,,Synurales,Mallomonadaceae,Mallomonas,,,,phytoplankton,phytoplankton,
+478,,Melosira sp.,Bacillariophyta,,Melosirales,Melosiraceae,Melosira,,,,phytoplankton,phytoplankton,
+479,,Melosira varians,Bacillariophyta,,Melosirales,Melosiraceae,Melosira,varians,,,phytoplankton,phytoplankton,
+480,,Merismopedia sp.,Cyanobacteria,,Synechococcales,Merismopediaceae,Merismopedia,,,,phytoplankton,phytoplankton,
+481,,Mesoporos perforatus,Miozoa,,Prorocentrales,Prorocentraceae,Mesoporos,perforatus,,,phytoplankton,phytoplankton,
+482,,Microcystis sp.,Cyanobacteria,,Chroococcales,Microcystaceae,Microcystis,,,,phytoplankton,phytoplankton,
+483,,Monoraphidium arcuatum,Chlorophyta,,Sphaeropleales,Selenastraceae,Monoraphidium,arcuatum,,,phytoplankton,phytoplankton,
+484,,Monoraphidium caribeum,Chlorophyta,,Sphaeropleales,Selenastraceae,Monoraphidium,caribeum,,,phytoplankton,phytoplankton,
+485,,Monoraphidium circinale,Chlorophyta,,Sphaeropleales,Selenastraceae,Monoraphidium,circinale,,,phytoplankton,phytoplankton,
+486,,Monoraphidium contortum,Chlorophyta,,Sphaeropleales,Selenastraceae,Monoraphidium,contortum,,,phytoplankton,phytoplankton,
+487,,Monoraphidium griffithii,Chlorophyta,,Sphaeropleales,Selenastraceae,Monoraphidium,griffithii,,,phytoplankton,phytoplankton,
+488,,Monoraphidium komarkovae,Chlorophyta,,Sphaeropleales,Selenastraceae,Monoraphidium,komarkovae,,,phytoplankton,phytoplankton,
+489,,Monoraphidium minutum,Chlorophyta,,Sphaeropleales,Selenastraceae,Monoraphidium,minutum,,,phytoplankton,phytoplankton,
+490,,Monoraphidium tortile,Chlorophyta,,Sphaeropleales,Selenastraceae,Monoraphidium,tortile,,,phytoplankton,phytoplankton,
+491,,Mougeotia sp.,Charophyta,,Zygnematales,Zygnemataceae,Mougeotia,,,,phytoplankton,phytoplankton,
+492,,Navicula sp.,Bacillariophyta,,Naviculales,Naviculaceae,Navicula,,,,phytoplankton,phytoplankton,
+493,,Nephrochlamys sp.,Chlorophyta,,Chlorellales,Oocystaceae,Nephrochlamys,,,,phytoplankton,phytoplankton,
+494,,Nitzschia sp.,Bacillariophyta,,Bacillariales,Bacillariaceae,Nitzschia,,,,phytoplankton,phytoplankton,
+495,,Ochromonas sp.,Ochrophyta,,Chromulinales,Chromulinaceae,Ochromonas,,,,phytoplankton,phytoplankton,
+496,,Oedogonium sp.,Chlorophyta,,Oedogoniales,Oedogoniaceae,Oedogonium,,,,phytoplankton,phytoplankton,
+497,,Oocystis solitaria,Chlorophyta,,Chlorellales,Oocystaceae,Oocystis,solitaria,,,phytoplankton,phytoplankton,
+498,,Oscillatoria sp.,Cyanobacteria,,Oscillatoriales,Oscillatoriaceae,Oscillatoria,,,,phytoplankton,phytoplankton,
+499,,Pandorina sp.,Chlorophyta,,Chlamydomonadales,Volvocaceae,Pandorina,,,,phytoplankton,phytoplankton,
+500,,Pediastrum boryanum,Chlorophyta,,Sphaeropleales,Hydrodictyaceae,Pediastrum,boryanum,,,phytoplankton,phytoplankton,
+501,,Pediastrum sp.,Chlorophyta,,Sphaeropleales,Hydrodictyaceae,Pediastrum,,,,phytoplankton,phytoplankton,
+502,,Peridinium sp.,Miozoa,,Peridiniales,Peridiniaceae,Peridinium,,,,phytoplankton,phytoplankton,
+503,,Phacus sp.,Euglenophyta,,Euglenales,Phacaceae,Phacus,,,,phytoplankton,phytoplankton,
+504,,Phormidium granulatum,Cyanobacteria,,Oscillatoriales,Oscillatoriaceae,Phormidium,granulatum,,,phytoplankton,phytoplankton,
+505,,Phormidium sp.,Cyanobacteria,,Oscillatoriales,Oscillatoriaceae,Phormidium,,,,phytoplankton,phytoplankton,
+506,,Plagioselmis sp.,Cryptophyta,,Pyrenomonadales,Geminigeraceae,Plagioselmis,,,,phytoplankton,phytoplankton,
+507,,Planktolyngbya sp.,Cyanobacteria,,Synechococcales,Leptolyngbyaceae,Planktolyngbya,,,,phytoplankton,phytoplankton,
+508,,Planothidium sp.,Bacillariophyta,,Cocconeidales,Achnanthidiaceae,Planothidium,,,,phytoplankton,phytoplankton,
+509,,Pleurosigma sp.,Bacillariophyta,,Naviculales,Pleurosigmataceae,Pleurosigma,,,,phytoplankton,phytoplankton,
+510,,Pleurosira laevis,Bacillariophyta,,Eupodiscales,Eupodiscaceae,Pleurosira,laevis,,,phytoplankton,phytoplankton,
+511,,Protoceratium sp.,Miozoa,,Gonyaulacales,Protoceratiaceae,Protoceratium,,,,phytoplankton,phytoplankton,
+512,,Pseudanabaena mucicola,Cyanobacteria,,Synechococcales,Pseudanabaenaceae,Pseudanabaena,mucicola,,,phytoplankton,phytoplankton,
+513,,Pseudanabaena sp.,Cyanobacteria,,Synechococcales,Pseudanabaenaceae,Pseudanabaena,,,,phytoplankton,phytoplankton,
+514,,Pseudokephyrion sp.,Ochrophyta,,Chromulinales,Dinobryaceae,Pseudokephyrion,,,,phytoplankton,phytoplankton,
+515,,Pseudokephyrion spirale,Ochrophyta,,Chromulinales,Dinobryaceae,Pseudokephyrion,spirale,,,phytoplankton,phytoplankton,
+516,,Pseudostaurosira sp.,Bacillariophyta,,Fragilariales,Fragilariaceae,Pseudostaurosira,,,,phytoplankton,phytoplankton,
+517,,Pyramimonas sp.,Chlorophyta,,Pyramimonadales,Pyramimonadaceae,Pyramimonas,,,,phytoplankton,phytoplankton,
+518,,Raphidocelis subcapitata,Chlorophyta,,Sphaeropleales,Selenastraceae,Raphidocelis,subcapitata,,,phytoplankton,phytoplankton,
+519,,Rhodomonas sp.,Cryptophyta,,Pyrenomonadales,Pyrenomonadaceae,Rhodomonas,,,,phytoplankton,phytoplankton,
+520,,Rhoicosphenia sp.,Bacillariophyta,,Cymbellales,Rhoicospheniaceae,Rhoicosphenia,,,,phytoplankton,phytoplankton,
+521,,Rhopalodia gibba,Bacillariophyta,,Rhopalodiales,Rhopalodiaceae,Rhopalodia,gibba,,,phytoplankton,phytoplankton,
+522,,Scenedesmus acuminatus,Chlorophyta,,Sphaeropleales,Scenedesmaceae,Scenedesmus,acuminatus,,,phytoplankton,phytoplankton,
+523,,Scenedesmus armatus,Chlorophyta,,Sphaeropleales,Scenedesmaceae,Scenedesmus,armatus,,,phytoplankton,phytoplankton,
+524,,Scenedesmus dimorphus,Chlorophyta,,Sphaeropleales,Scenedesmaceae,Scenedesmus,dimorphus,,,phytoplankton,phytoplankton,
+525,,Scenedesmus sp.,Chlorophyta,,Sphaeropleales,Scenedesmaceae,Scenedesmus,,,,phytoplankton,phytoplankton,
+526,,Schroederia sp.,Chlorophyta,,Sphaeropleales,Schroederiaceae,Schroederia,,,,phytoplankton,phytoplankton,
+527,,Sellaphora sp.,Bacillariophyta,,Naviculales,Sellaphoraceae,Sellaphora,,,,phytoplankton,phytoplankton,
+528,,Sphaerocystis planktonica,Chlorophyta,,Chlamydomonadales,Sphaerocystidaceae,Sphaerocystis,planktonica,,,phytoplankton,phytoplankton,
+529,,Spondylosium javanicum,Charophyta,,Desmidiales,Desmidiaceae,Spondylosium,javanicum,,,phytoplankton,phytoplankton,
+530,,Staurastrum sp.,Charophyta,,Desmidiales,Desmidiaceae,Staurastrum,,,,phytoplankton,phytoplankton,
+531,,Stenopterobia sp.,Bacillariophyta,,Surirellales,Surirellaceae,Stenopterobia,,,,phytoplankton,phytoplankton,
+532,,Stephanodiscus sp.,Bacillariophyta,,Stephanodiscales,Stephanodiscaceae,Stephanodiscus,,,,phytoplankton,phytoplankton,
+533,,Strombomonas sp.,Euglenophyta,,Euglenales,Euglenaceae,Strombomonas,,,,phytoplankton,phytoplankton,
+534,,Surirella sp.,Bacillariophyta,,Surirellales,Surirellaceae,Surirella,,,,phytoplankton,phytoplankton,
+535,,Synechococcus sp.,Cyanobacteria,,Synechococcales,Synechococcaceae,Synechococcus,,,,phytoplankton,phytoplankton,
+536,,Synedra sp.,Bacillariophyta,,Licmophorales,Ulnariaceae,Synedra,,,,phytoplankton,phytoplankton,
+537,,Synura sp.,Ochrophyta,,Synurales,Synuraceae,Synura,,,,phytoplankton,phytoplankton,
+538,,Tabellaria sp.,Bacillariophyta,,Tabellariales,Tabellariaceae,Tabellaria,,,,phytoplankton,phytoplankton,
+539,,Tabularia sp.,Bacillariophyta,,Licmophorales,Ulnariaceae,Tabularia,,,,phytoplankton,phytoplankton,
+540,,Teleaulax sp.,Cryptophyta,,Pyrenomonadales,Geminigeraceae,Teleaulax,,,,phytoplankton,phytoplankton,
+541,,Tetra?dron minimum,Chlorophyta,,Sphaeropleales,Hydrodictyaceae,Tetra?dron,minimum,,,phytoplankton,phytoplankton,
+542,,Tetra?dron regulare,Chlorophyta,,Sphaeropleales,Hydrodictyaceae,Tetra?dron,regulare,,,phytoplankton,phytoplankton,
+543,,Tetraspora sp.,Chlorophyta,,Chlamydomonadales,Tetrasporaceae,Tetraspora,,,,phytoplankton,phytoplankton,
+544,,Tetrastrum staurogeniaeforme,Chlorophyta,,Sphaeropleales,Scenedesmaceae,Tetrastrum,staurogeniaeforme,,,phytoplankton,phytoplankton,
+545,,Thalassiosira sp.,Bacillariophyta,,Thalassiosirales,Thalassiosiraceae,Thalassiosira,,,,phytoplankton,phytoplankton,
+546,,Trachelomonas sp.,Euglenophyta,,Euglenales,Euglenaceae,Trachelomonas,,,,phytoplankton,phytoplankton,
+547,,Trachelomonas volvocina,Euglenophyta,,Euglenales,Euglenaceae,Trachelomonas,volvocina,,,phytoplankton,phytoplankton,
+548,,Tryblionella sp.,Bacillariophyta,,Bacillariales,Bacillariaceae,Tryblionella,,,,phytoplankton,phytoplankton,
+549,,Tychonema sp.,Cyanobacteria,,Oscillatoriales,Microcoleaceae,Tychonema,,,,phytoplankton,phytoplankton,
+550,,Algae UNID,NA,,NA,NA,NA,NA,,,phytoplankton,phytoplankton,
+557,,Centrales UNID,Bacillariophyta,,Centrales,NA,NA,NA,,,phytoplankton,phytoplankton,
+559,,Chlorophyte UNID,Chlorophyta,,NA,NA,NA,NA,,,phytoplankton,phytoplankton,
+564,,Chrysophyte UNID,Chrysophyta,,NA,NA,NA,NA,,,phytoplankton,phytoplankton,
+565,,Cryptophyte UNID,Cryptophyta,,NA,NA,NA,NA,,,phytoplankton,phytoplankton,
+566,,Cyanophyte UNID,Cyanophyta,,NA,NA,NA,NA,,,phytoplankton,phytoplankton,
+574,,Dinoflagellate  UNID,Miozoa,,NA,NA,NA,NA,,,phytoplankton,phytoplankton,
+575,,Euglenophyta  UNID,Euglenophyta,,NA,NA,NA,NA,,,phytoplankton,phytoplankton,
+576,,Diatom UNID,Bacillariophyta,,NA,NA,NA,NA,,,phytoplankton,phytoplankton,
+577,,Pennales UNID,Bacillariophyta,,Pennales,NA,NA,NA,,,phytoplankton,phytoplankton,
+578,,Xanthophyte UNID,Xanthophyta,,NA,NA,NA,NA,,,phytoplankton,phytoplankton,
+147,,Planaria,Platyhelminthes,Rhabditophora,Tricladida,Dugesiidae,Girardia,tigrina,adult,FALSE,Platyhelminthes,Platyhelminthes,Planaria
+2,,Rotifer Other,Rotifera,,,,,,adult,FALSE,Rotifera,Rotifera,Rotifer
+7,,Rotifer UNID,Rotifera,Monogononta,Ploima,,,,adult,FALSE,Rotifera,Rotifera,Rotifer
+88,,Asplanchna,Rotifera,Monogononta,Ploima,Asplanchnidae,Asplanchna,,adult,FALSE,Rotifera,Rotifera,Rotifer
+89,,Synchaeta bicornis,Rotifera,Monogononta,Ploima,Synchaetidae,Synchaeta,bicornis,adult,FALSE,Rotifera,Rotifera,Rotifer
+90,,Keratella,Rotifera,Monogononta,Ploima,Brachionidae,Keratella,,adult,FALSE,Rotifera,Rotifera,Rotifer
+91,,Polyarthra,Rotifera,Monogononta,Ploima,Synchaetidae,Polyarthra,,adult,FALSE,Rotifera,Rotifera,Rotifer
+92,,Synchaeta,Rotifera,Monogononta,Ploima,Synchaetidae,Synchaeta,,adult,FALSE,Rotifera,Rotifera,Rotifer
+93,,Trichocerca,Rotifera,Monogononta,Ploima,Trichocercidae,Trichocerca,,adult,FALSE,Rotifera,Rotifera,Rotifer
+249,,Branchionus,Rotifera,Monogononta,Ploima,Brachionidae,Branchionus,,adult,FALSE,Rotifera,Rotifera,Rotifer
+256,,Platyias,Rotifera,Eurotatoria,Ploima,Brachionidae,Platyias,,adult,FALSE,Rotifera,Rotifera,Rotifer
+264,,Kellicottia,Rotifera,Eurotatoria,Ploima,Brachionidae,Kellicottia,,adult,FALSE,Rotifera,Rotifera,Rotifer
+9999,NOFISH,No Catch,,,,,,,,FALSE,,,No Catch

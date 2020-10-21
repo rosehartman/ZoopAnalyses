@@ -34,7 +34,8 @@ PlotNMDS = function(NMDS1, # results of the NMDS you want to plot
   # draw a hull around each group
   for (i in 1:m) {
     
-    with(data, ordiellipse(NMDS1, kind = "sd", conf = 0.95, groups = group, show = levels(group)[i], col=cols[i], lwd=2, lty = 1:length(group)))
+    with(data, ordiellipse(NMDS1, kind = "sd", conf = 0.95, groups = group, 
+                           show = levels(group)[i], col=cols[i], lwd=2, lty = 1:length(group)))
   }
   
   #second group with spiders

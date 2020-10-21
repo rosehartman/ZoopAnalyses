@@ -1,42 +1,100 @@
-Site,FRPStation,EMPzoop,Twentymil,FMWT,Shallowdeep,Ggdist
-Ryer Island,Ryer 2,NZ028,501,501,N,60
-Ryer Island,Ryer 3,NZ028,501,501,N,60
-Ryer Island,Ryer1,NZ028,501,501,N,60
-Ryer Island,501 FRP,,501,,Y,60
-Grizzly Bay,602FRP,NZ028,602,602,Y,65
-Tule Red,TR1,NZ028,602,602,N,65
-Tule Red,TR2,NZ028,602,602,N,65
-Tule Red,TR3,NZ028,602,602,N,65
-Tule Red,TR5,NZ028,602,602,N,65
-Tule Red,TR7,NZ028,602,602,N,65
-Little Honker Bay,609 FRP,NZ032,609,,Y,75
-Sherman Lake,703 FRP,NZ060,703,704,Y,85
-Horseshoe Bend,705 FRP,NZ064,705,706,Y,95
-Horseshoe Bend,Decker Breach,NZ064,705,706,Y,95
-Horseshoe Bend,706 FRP,NZ064,706,706,Y,95
-Lindsey,LinBr,,720,,Y,130
-Lindsey,Lindsey tules,,720,,Y,130
-Lindsey,720 FRP,,720,,Y,130
-Prospect,724 FRP,,724,,Y,115
-Prospect,ProBr,,724,723,Y,115
-Prospect,SoPro,,724,723,N,115
-Prospect,SoPro4,,724,723,N,115
-Prospect,SoPro5,,724,723,N,115
-Prospect,SoPro6,,724,723,N,115
-Prospect,SoPro7,,724,723,N,115
-Prospect,ProBR,,724,,N,115
-Prospect,726 FRP,,726,,Y,120
-Broad Slough,801 FRP,NZ060,801,802,Y,80
-Browns,Browns Channel,NZ054,801,513,Y,80
-Browns,Browns1,NZ054,801,513,N,80
-Dow Wetlands,Dow 2,NZ074,801,802,N,80
-Dow Wetlands,Dow 3,NZ074,801,802,N,80
-Dow Wetlands,Dow 4,NZ074,801,802,N,80
-Dow Wetlands,Dow 5,NZ074,801,802,N,80
-Dow Wetlands,Dow Breach,NZ074,801,802,N,80
-winter,WinBr,NZ060,801,802,Y,80
-winter,Winter 1,NZ060,801,802,N,80
-winter,Winter 2,NZ060,801,802,N,80
-winter,Winter 3,NZ060,801,802,N,80
-Webb Tract,Webb,NZ086,815,815,Y,105
-Wings,Wings 1,NZS42,,,Y,60
+Site,Site2,FRPStation,EMPzoop,Twentymil,FMWT,Shallowdeep,Ggdist,SiteType,Region
+Cache,Cache,723 FRP,,723,723,N,115,Channel,Cache
+Cache,Cache,Lookout Vogel Outside,,,,N,115,Tidal,Cache
+Cache,Cache,LookoutVogelOutside,,,,N,115,Tidal,Cache
+Flyway,Flyway,Flyway,,,,N,125,Tidal,Cache
+Flyway,Flyway,Flyway Channel,,,,N,125,Tidal,Cache
+Flyway,Flyway,FlywayChannel1,,,,N,125,Tidal,Cache
+Flyway,Flyway,Toedrain1,,,,N,125,Channel,Cache
+Liberty,Liberty,NELiberty,,,,N,110,Tidal,Cache
+Liberty,Liberty,NELiberty,,,,N,110,Tidal,Cache
+Liberty,Liberty,NWLiberty,,,,N,110,Tidal,Cache
+Liberty,Liberty,SELiberty,,,,N,110,Tidal,Cache
+Liberty,Liberty,SWLiberty,,,,N,110,Tidal,Cache
+Liberty,Liberty,SWLiberty,,,,N,110,Tidal,Cache
+Lindsey,Lindsey,720 FRP,,720,,Y,130,Channel,Cache
+Lindsey,Lindsey,LinBr,,720,,Y,130,Tidal,Cache
+Lindsey,Lindsey,LinBR,,720,,Y,130,Tidal,Cache
+Lindsey,Lindsey,Lindsey tules,,720,,Y,130,Tidal,Cache
+Lindsey,Lindsey,Lindsey Tules,,720,,Y,130,Tidal,Cache
+Lookout,Lookout,LOOK_UNK,,,,N,115,Diked,Cache
+Lookout,Lookout,LookoutSlough,,,,N,115,Diked,Cache
+Lookout,Lookout,LookoutSouthPond,,,,N,115,Diked,Cache
+Lookout,Lookout,LookoutSycamore,,,,N,115,Diked,Cache
+Prospect,Miner,724 FRP,,724,,Y,115,Channel,Cache
+Prospect,Miner,726 FRP,,726,,Y,120,Channel,Cache
+Prospect,Miner,MinSlo1,,,,N,115,Channel,Cache
+Prospect,Prospect,ProBr,,724,723,Y,115,Muted,Cache
+Prospect,Prospect,ProBR,,724,,Y,115,Muted,Cache
+Prospect,Prospect,SoPro,,724,723,N,115,Muted,Cache
+Prospect,Prospect,SoPro1,,,,N,115,Muted,Cache
+Prospect,Prospect,SoPro2,,,,N,115,Muted,Cache
+Prospect,Prospect,SoPro3,,,,N,115,Muted,Cache
+Prospect,Prospect,SoPro4,,724,723,N,115,Muted,Cache
+Prospect,Prospect,SoPro5,,724,723,N,115,Muted,Cache
+Prospect,Prospect,SoPro6,,724,723,N,115,Muted,Cache
+Prospect,Prospect,SoPro7,,724,723,N,115,Muted,Cache
+Browns,Browns,Browns 1,NZ054,513,513,Y,80,Tidal,Confluence
+Browns,Browns,Browns Channel,NZ054,513,513,Y,80,Tidal,Confluence
+Browns,Browns,Browns1,NZ054,513,513,Y,80,Tidal,Confluence
+Browns,Browns,BrownsPond,NZ054,513,513,Y,80,Tidal,Confluence
+Chipps,Chipps,Chipps Met,,,,N,75,Muted,Confluence
+Chipps,Chipps,Chipps North,,,,N,75,Muted,Confluence
+Dow Wetlands,Dow Wetlands,Dow 2,NZ074,801,802,N,80,Tidal,Confluence
+Dow Wetlands,Dow Wetlands,Dow 3,NZ074,801,802,N,80,Tidal,Confluence
+Dow Wetlands,Dow Wetlands,Dow 4,NZ074,801,802,N,80,Tidal,Confluence
+Dow Wetlands,Dow Wetlands,Dow 5,NZ074,801,802,N,80,Tidal,Confluence
+Dow Wetlands,Dow Wetlands,Dow Breach,NZ074,801,802,N,80,Tidal,Confluence
+Dow Wetlands,Dow Wetlands,Dow Outside,,,,N,80,Channel,Confluence
+Sherman Lake,Sherman Lake,703 FRP,NZ060,703,704,Y,85,Tidal,Confluence
+Winter,Broad Slough,801 FRP,NZ060,801,802,Y,80,Tidal,Confluence
+Winter,Winter,WinBr,NZ060,801,802,Y,80,Muted,Confluence
+Winter,Winter,WinBR,NZ060,801,802,Y,80,Muted,Confluence
+Winter,Winter,Winter 1,NZ060,801,802,Y,80,Muted,Confluence
+Winter,Winter,Winter 2,NZ060,801,802,Y,80,Muted,Confluence
+Winter,Winter,Winter 3,NZ060,801,802,N,80,Muted,Confluence
+Winter,Winter,Winter 5,,,,N,80,Muted,Confluence
+Winter,Winter,Winter Channel,NZ060,801,802,Y,80,Muted,Confluence
+Winter,Winter,WinterChannel,,,,Y,80,Muted,Confluence
+Winter,Winter,WinterNorth,,,,N,80,Muted,Confluence
+Winter,Winter,WinterPondsEast,,,,N,80,Muted,Confluence
+Horseshoe Bend,Horseshoe Bend,705 FRP,NZ064,705,706,Y,92,Channel,Sac SanJ
+Horseshoe Bend,Horseshoe Bend,706 FRP,NZ064,706,706,Y,92,Channel,Sac SanJ
+Horseshoe Bend,Decker,Decker Breach,NZ064,705,706,Y,92,Muted,Sac SanJ
+Horseshoe Bend,Decker,Decker Channel,,,,N,92,Muted,Sac SanJ
+Horseshoe Bend,Decker,Decker Inside,,,,N,92,Muted,Sac SanJ
+Horseshoe Bend,Horseshoe Bend,Horsebend1,NZ086,815,815,Y,92,Channel,Sac SanJ
+Horseshoe Bend,Horseshoe Bend,HorseBend3,,,,N,92,Channel,Sac SanJ
+Stacys,Stacys,STACYS,NZ086,815,815,Y,105,Tidal,Sac SanJ
+Stacys,Stacys,Stacys Island,NZ086,815,815,Y,105,Tidal,Sac SanJ
+Stacys,Stacys,Stacy's Island,,,,Y,105,Tidal,Sac SanJ
+Stacys,Stacys,Webb,NZ086,815,815,Y,105,Tidal,Sac SanJ
+Grizzly Bay,Grizzly Bay,602FRP,NZ028,602,602,Y,65,Channel,Suisun Bay
+Grizzly Bay,Grizzly Bay,GRIZ_UNK,NZ028,602,602,Y,65,Channel,Suisun Bay
+Ryer Island,Ryer Island,501 FRP,NZ028,501,,N,60,Tidal,Suisun Bay
+Ryer Island,Ryer Island,Ryer 2,NZ028,501,501,N,60,Tidal,Suisun Bay
+Ryer Island,Ryer Island,Ryer 2nd channel,NZ028,501,501,N,60,Tidal,Suisun Bay
+Ryer Island,Ryer Island,Ryer 3,NZ028,501,501,N,60,Tidal,Suisun Bay
+Ryer Island,Ryer Island,Ryer1,NZ028,501,501,N,60,Tidal,Suisun Bay
+Ryer Island,Ryer Island,Ryer2,,,,N,60,Tidal,Suisun Bay
+Ryer Island,Ryer Island,Ryer2ndChannel,NZ028,501,501,N,60,Tidal,Suisun Bay
+Ryer Island,Ryer Island,Ryer3,,,,N,60,Tidal,Suisun Bay
+Ryer Island,Ryer Island,RyerChannel,NZ028,501,501,N,60,Tidal,Suisun Bay
+Tule Red,Tule Red,TR1,NZ028,602,602,N,65,Diked,Suisun Bay
+Tule Red,Tule Red,TR2,NZ028,602,602,N,65,Diked,Suisun Bay
+Tule Red,Tule Red,TR3,NZ028,602,602,N,65,Diked,Suisun Bay
+Tule Red,Tule Red,TR4,,,,N,65,Diked,Suisun Bay
+Tule Red,Tule Red,TR5,NZ028,602,602,N,65,Diked,Suisun Bay
+Tule Red,Tule Red,TR6,,,,N,65,Diked,Suisun Bay
+Tule Red,Tule Red,TR7,NZ028,602,602,N,65,Diked,Suisun Bay
+Tule Red,Tule Red,TULE_UNK,,,,N,65,Diked,Suisun Bay
+Arnold,Arnold,Arnold Restoration,,,,N,75,Diked,Suisun Marsh
+Bradmoor,Bradmoor,322 Bradmoor,,,,N,75,Diked,Suisun Marsh
+Bradmoor,Bradmoor,329 East Bradmoor,,,,N,75,Diked,Suisun Marsh
+Bradmoor,Bradmoor,330 South Bradmoor,,,,N,75,Diked,Suisun Marsh
+Bradmoor,Bradmoor,BRAD_UNK,,,,N,75,Diked,Suisun Marsh
+Bradmoor,Bradmoor,Bradmoor,,,,N,75,Diked,Suisun Marsh
+Little Honker Bay,Little Honker Bay,609 FRP,NZ032,609,,Y,75,Tidal,Suisun Marsh
+Little Honker Bay,Blacklock,Blacklock,NZ032,609,,Y,75,Tidal,Suisun Marsh
+Wings,Peytonia,Wings 1,NZS42,,,Y,70,Channel,Suisun Marsh
+Wings,Wings,Wings Brood Pond,,,,N,70,Diked,Suisun Marsh

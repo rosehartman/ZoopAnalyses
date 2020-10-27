@@ -295,6 +295,7 @@ n2 = metaMDS(Blitzmatp, trymax = 300)
 #Nope, not working.
 
 ################################################################3
+######################################################3
 
 
 library(Hmsc)
@@ -319,28 +320,16 @@ envmat2 = Envmat
 
 #set up the model
 envmat2$Year2 = as.factor(envmat2$Year)
-#m2 = Hmsc(Y = as.matrix(allzoopCom), XData = as.data.frame(envmat2), 
-#          XFormula = ~Region + SiteType + Year2)
+m2 = Hmsc(Y = as.matrix(allzoopCom), XData = as.data.frame(envmat2), 
+          XFormula = ~Region + SiteType + Year2)
 
-#studydesign = data.frame(plot = as.factor(envmat2$Site2))
-#rL2 = HmscRandomLevel(units = envmat2$Site2)
-#m = Hmsc(Y = as.matrix(allzoopCom), XData = as.data.frame(envmat2),
-#         XFormula =  ~SiteType + Region + Year,
-#         studyDesign = studydesign, ranLevels = list("plot" = rL2), distr = "lognormal poisson")
-
-m = Hmsc(Y = as.matrix(allzoopCom), XData = as.data.frame(envmat2),
-                  XFormula =  ~SiteType + Region + Year2,
-                 distr = "lognormal poisson")
-         
 #Now do MCMC sampling on it to estimate model parameters
 
-m2 = sampleMcmc(m, thin = 10, samples = 1000, transient = 5000,
-               nChains = 2)  
-
-
+mm2 = sampleMcmc(m2, thin = 10, samples = 1000, transient = 5000,
+                 nChains = 2)
 
 #Check MCMC convergence diagnostics
-mpost = convertToCodaObject(m2)
+mpost = convertToCodaObject(mm2)
 diags = data.frame(effectiveSize(mpost$Beta), 
                    gelman.diag(mpost$Beta, multivariate=TRUE)$psrf)
 
@@ -355,35 +344,35 @@ hist(gelman.diag(mpost$Beta, multivariate=TRUE)$psrf, main="psrf(beta)")
 #To assess the model’s explanatory power, we apply the evaluateModelFit 
 #function to the posterior predictive
 #distribution simulated by the function computePredictedValues.
-preds = computePredictedValues(m2, nParallel = 2)
-fit = evaluateModelFit(hM = m2, predY = preds)
+preds = computePredictedValues(mm2, nParallel = 2)
+fit = evaluateModelFit(hM = mm2, predY = preds)
 #
 
 # We next evaluate the model’s predictive power through two-fold cross validation.
-partition = createPartition(m, nfolds = 2)
-predscross = computePredictedValues(m2, partition = partition)
+partition = createPartition(mm2, nfolds = 2)
+predscross = computePredictedValues(mm2, partition = partition)
 
-evaluateModelFit(hM = m2, predY = predscross)
+evaluateModelFit(hM = mm2, predY = predscross)
 
 #Let us now look at the estimates of the β parameters. We may do so visually by applying the plotBeta
 #function.
-postBeta = getPostEstimate(m2, parName = "Beta")
-plotBeta(m, post = postBeta, param = "Support", 
-         supportLevel = 0.90, 
+postBeta = getPostEstimate(mm2, parName = "Beta")
+plotBeta(mm2, post = postBeta, param = "Support", 
+         supportLevel = 0.95, 
          covNamesNumbers = c(T, F),
          mar = c(.1,.1,0,0))
-plotBeta(m, post = postBeta, param = "Mean", supportLevel = 0.5)
+plotBeta(mm2, post = postBeta, param = "Mean")
 
 betamean = postBeta$mean
 for(j in 1:ncol(postBeta$mean)) {
-for(i in 1:nrow(postBeta$mean)) {
-  if ((postBeta$support[i,j] >0.95)) betamean[i,j] = betamean[i,j] else {
-    if(postBeta$supportNeg[i,j] > 0.95) betamean[i,j] = betamean[i,j] else betamean[i,j] = 0
-  }
-}}
+  for(i in 1:nrow(postBeta$mean)) {
+    if ((postBeta$support[i,j] >0.95)) betamean[i,j] = betamean[i,j] else {
+      if(postBeta$supportNeg[i,j] > 0.95) betamean[i,j] = betamean[i,j] else betamean[i,j] = 0
+    }
+  }}
 
 betamean = as.data.frame(betamean)
-betamean$variables = m$covNames
+betamean$variables = mm2$covNames
 betamean2 = pivot_longer(betamean, cols = `Barnacle nauplii`:Rotifers, 
                          names_to = "Species", values_to = "support")
 
@@ -391,20 +380,8 @@ ggplot(betamean2) + geom_tile(aes(x=variables, y = Species, fill = support))+
   scale_fill_gradient2(low = "blue",
                        mid = "white",
                        high = "red", name = NULL) +
-  #scale_x_discrete(labels = c("Cache, \n Channel, 2017", "Confluence", 
-  ##                            "Sac SanJ", "Suisun Bay", "Suisun Marsh",
-  #                           "Diked", "Muted", "Tidal", "2018", "2019") 
-  #                 )+
+#  scale_x_discrete(labels = c("Cache, \n Channel, 2017", "Confluence", 
+#                              "Sac SanJ", "Suisun Bay", "Suisun Marsh",
+#                              "Diked", "Muted", "Tidal", "2018", "2019") 
+#  )+
   theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5))
-
-
-#I don't tknow why it looks like diked wetlands have less cladocera
-
-clads = filter(zoop20x, AnalyLS == "Cladocera")
-c1 = lmer(log(CPUE+1)~ SiteType + Year + (1|Site2), data = clads)
-summary(c1)
-
-c2 = glm(log(CPUE+1)~ SiteType + Region + Year + Site2, data = clads)
-summary(c2)
-
-#Hm. It looks like having "site" in there reverses the effect of "site type" HOw obnoxious

@@ -329,7 +329,7 @@ envmat2$Year2 = as.factor(envmat2$Year)
 #         studyDesign = studydesign, ranLevels = list("plot" = rL2), distr = "lognormal poisson")
 
 m = Hmsc(Y = as.matrix(allzoopCom), XData = as.data.frame(envmat2),
-                  XFormula =  ~SiteType + Region + Year,
+                  XFormula =  ~SiteType + Region + Year2,
                  distr = "lognormal poisson")
          
 #Now do MCMC sampling on it to estimate model parameters

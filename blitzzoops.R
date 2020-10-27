@@ -70,7 +70,7 @@ stations = dplyr::select(stas, Site, Site2, FRPStation,
                          Ggdist, SiteType, Region) %>%
   rename(Station = FRPStation) %>%
   mutate(Region = factor(Region, levels = c("Suisun Marsh", "Suisun Bay", "Confluence",
-                                            "Sac-San J", "Cache")))
+                                            "Sac SanJ", "Cache")))
 
 
 
@@ -133,10 +133,10 @@ zoolabs = c("Amphipoda", "Annelida", "Barnacle Nauplii", "Calanoida",
 mypal = c(brewer.pal(12, "Set3"), brewer.pal(8, "Dark2"))
 
 #Now a bar plot
-z1 = ggplot(zooLitave, aes(x=Site2, y= CPUE))
+z1 = ggplot(zooLitave, aes(x=SiteType, y= CPUE))
 z1 + geom_bar(stat = "identity", aes(fill = AnalyLS), position = "fill") + 
   scale_fill_manual(values = c(mypal, "white", "green"), name = NULL) + 
-  facet_grid(.~Region + SiteType, scales = "free_x", space = "free") +
+  facet_grid(.~Region, scales = "free_x", space = "free") +
   #  coord_cartesian(ylim = c(0, 16000)) +
   xlab("Site") + ylab("Percent composition")+
   theme(legend.position = "right", axis.text.x = element_text(angle = 90))

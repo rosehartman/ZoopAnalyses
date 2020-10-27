@@ -9,6 +9,9 @@ library(lme4)
 library(vegan)
 library(RColorBrewer)
 
+library(effects)
+library(visreg)
+
 #IEPzoop = Zoopsynther(
 #  Data_type = "Community",
 #  Sources = c("EMP", "20mm"),
@@ -43,7 +46,11 @@ stations = read.csv("stations2.csv")
 #filter the data so I just have the stations I want
 FRPzoop2.1 = left_join(filter(stations, survey == "FRP"), FRPzoop2, by = "Station") %>%
   dplyr::select(Site, Region, SiteType, Site2, survey, Station, Ggdist, SampleID, Date, CPUE,
-         Lifestage, Taxname, Analy, Analy2)
+         Lifestage, Taxname, Analy, Analy2) %>%
+mutate(Region = factor(Region, levels = c("Suisun Marsh", "Suisun Bay", "Confluence",
+                                          "Sac SanJ", "Cache")))
+
+
 
 IEPzoop.1 = left_join(filter(stations, survey != "FRP"), IEPzoop, by = "Station")
 
@@ -168,30 +175,43 @@ zoosum = group_by(allzoopsb, SampleID, Site2, Region, SiteType, Year) %>%
   summarize(CPUE = sum(CPUE, na.rm = T), ggdist = mean(Ggdist)) %>%
   mutate(Year2 = as.factor(Year))
 
-library(effects)
-library(visreg)
 #Model log-transformed catch against time (month) and station
 g1s = lmer(log(CPUE)~SiteType + Region + Year2 + (1|Site2), data = zoosum)
 summary(g1s)
 #gross
 visreg(g1s)
 
-p1.1 = Effect("SiteType", g1s, residuals = T)
-plot(p1.1, partial.residuals=
-       list(span=0.9, col = "grey", alpha = 0.5, pch = 3, cex = .5),
-     axes=list(x=list(cex = 2), y = list(cex = 2)),
-               lwd = 2, confint = list(style = "bars", col = "black", lwd = 2))
+##############################################################
+#plot the partial residuals
 
-p1.2 = Effect("Region", g1s, residuals = T)
-plot(p1.2, partial.residuals=
-       list(span=0.9, col = "grey", alpha = 0.5, pch = 3, cex = .5),
-     axes=list(x=list(cex = 1.6), y = list(cex = 2)), lwd = 2,
-     confint = list(style = "bars", col = "black", lwd = 2))
+partplot = function(data, model, term){
+p1.1 = Effect(term, model, residuals = T)
+term2 = noquote(term)
 
-p1.3 = Effect("Year2", g1s, residuals = T)
-plot(p1.3, partial.residuals=list(span=0.9, col = "grey", alpha = 0.5, pch = 3, cex = .5),
-     axes=list(x=list(cex = 2), y = list(cex = 2)),
-     lwd = 2, confint = list(style = "bars", col = "black", lwd = 2))
+dat = data.frame(term2 = p1.1$variables[[1]]$levels, fit = p1.1$fit, 
+                 lower = p1.1$lower, upper = p1.1$upper)
+datres = data.frame(term2 = p1.1$data[[term]], resid = p1.1$residuals) %>%
+  left_join(dat) %>%
+  mutate(fitres = fit+resid) %>%
+  rename(fit1 = fit, fit = fitres)
+
+
+test = ggplot() +
+  geom_point(data = datres, aes(x = term2, y = fit, color = term2), 
+              alpha = 0.3, position = "jitter")+
+  xlab(term) + ylab("log(CPUE)")+
+  geom_point(data = dat, aes(x = term2, y = fit)) +
+  geom_errorbar(data = dat, aes(x = term2, ymin = lower, ymax = upper))+
+  scale_color_discrete(guide = NULL)+
+  theme_bw() + theme(text = element_text(size = 16))
+
+test
+}
+
+
+partplot(zoosum, g1s, "SiteType")
+partplot(zoosum, g1s, "Region")
+partplot(zoosum, g1s, "Year2")
 
 
 g2 = lm(log(CPUE)~SiteType + Region + Year2 + Site2, data = zoosum)
@@ -299,16 +319,28 @@ envmat2 = Envmat
 
 #set up the model
 envmat2$Year2 = as.factor(envmat2$Year)
-m2 = Hmsc(Y = as.matrix(allzoopCom), XData = as.data.frame(envmat2), 
-          XFormula = ~Region + SiteType + Year2)
+#m2 = Hmsc(Y = as.matrix(allzoopCom), XData = as.data.frame(envmat2), 
+#          XFormula = ~Region + SiteType + Year2)
 
+#studydesign = data.frame(plot = as.factor(envmat2$Site2))
+#rL2 = HmscRandomLevel(units = envmat2$Site2)
+#m = Hmsc(Y = as.matrix(allzoopCom), XData = as.data.frame(envmat2),
+#         XFormula =  ~SiteType + Region + Year,
+#         studyDesign = studydesign, ranLevels = list("plot" = rL2), distr = "lognormal poisson")
+
+m = Hmsc(Y = as.matrix(allzoopCom), XData = as.data.frame(envmat2),
+                  XFormula =  ~SiteType + Region + Year,
+                 distr = "lognormal poisson")
+         
 #Now do MCMC sampling on it to estimate model parameters
 
-mm2 = sampleMcmc(m2, thin = 10, samples = 1000, transient = 5000,
-                 nChains = 2)
+m2 = sampleMcmc(m, thin = 10, samples = 1000, transient = 5000,
+               nChains = 2)  
+
+
 
 #Check MCMC convergence diagnostics
-mpost = convertToCodaObject(mm2)
+mpost = convertToCodaObject(m2)
 diags = data.frame(effectiveSize(mpost$Beta), 
                    gelman.diag(mpost$Beta, multivariate=TRUE)$psrf)
 
@@ -323,24 +355,24 @@ hist(gelman.diag(mpost$Beta, multivariate=TRUE)$psrf, main="psrf(beta)")
 #To assess the model’s explanatory power, we apply the evaluateModelFit 
 #function to the posterior predictive
 #distribution simulated by the function computePredictedValues.
-preds = computePredictedValues(mm2, nParallel = 2)
-fit = evaluateModelFit(hM = mm2, predY = preds)
+preds = computePredictedValues(m2, nParallel = 2)
+fit = evaluateModelFit(hM = m2, predY = preds)
 #
 
 # We next evaluate the model’s predictive power through two-fold cross validation.
-partition = createPartition(mm2, nfolds = 2)
-predscross = computePredictedValues(mm2, partition = partition)
+partition = createPartition(m, nfolds = 2)
+predscross = computePredictedValues(m2, partition = partition)
 
-evaluateModelFit(hM = mm2, predY = predscross)
+evaluateModelFit(hM = m2, predY = predscross)
 
 #Let us now look at the estimates of the β parameters. We may do so visually by applying the plotBeta
 #function.
-postBeta = getPostEstimate(mm2, parName = "Beta")
-plotBeta(mm2, post = postBeta, param = "Support", 
-         supportLevel = 0.95, 
+postBeta = getPostEstimate(m2, parName = "Beta")
+plotBeta(m, post = postBeta, param = "Support", 
+         supportLevel = 0.90, 
          covNamesNumbers = c(T, F),
          mar = c(.1,.1,0,0))
-plotBeta(mm2, post = postBeta, param = "Mean")
+plotBeta(m, post = postBeta, param = "Mean", supportLevel = 0.5)
 
 betamean = postBeta$mean
 for(j in 1:ncol(postBeta$mean)) {
@@ -351,7 +383,7 @@ for(i in 1:nrow(postBeta$mean)) {
 }}
 
 betamean = as.data.frame(betamean)
-betamean$variables = mm2$covNames
+betamean$variables = m$covNames
 betamean2 = pivot_longer(betamean, cols = `Barnacle nauplii`:Rotifers, 
                          names_to = "Species", values_to = "support")
 
@@ -359,8 +391,20 @@ ggplot(betamean2) + geom_tile(aes(x=variables, y = Species, fill = support))+
   scale_fill_gradient2(low = "blue",
                        mid = "white",
                        high = "red", name = NULL) +
-  scale_x_discrete(labels = c("Cache, \n Channel, 2017", "Confluence", 
-                              "Sac SanJ", "Suisun Bay", "Suisun Marsh",
-                             "Diked", "Muted", "Tidal", "2018", "2019") 
-                   )+
+  #scale_x_discrete(labels = c("Cache, \n Channel, 2017", "Confluence", 
+  ##                            "Sac SanJ", "Suisun Bay", "Suisun Marsh",
+  #                           "Diked", "Muted", "Tidal", "2018", "2019") 
+  #                 )+
   theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5))
+
+
+#I don't tknow why it looks like diked wetlands have less cladocera
+
+clads = filter(zoop20x, AnalyLS == "Cladocera")
+c1 = lmer(log(CPUE+1)~ SiteType + Year + (1|Site2), data = clads)
+summary(c1)
+
+c2 = glm(log(CPUE+1)~ SiteType + Region + Year + Site2, data = clads)
+summary(c2)
+
+#Hm. It looks like having "site" in there reverses the effect of "site type" HOw obnoxious
